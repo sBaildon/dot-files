@@ -1,0 +1,14 @@
+libray: '~/Music/'
+import:
+    write: yes
+    copy: yes
+    timid: yes
+asciify_paths: yes
+ui:
+    color: yes
+plugins: scrub fetchart embedart duplicates
+scrub:
+    auto: yes
+fetchart:
+    sources: albumart itunes coverart *
+

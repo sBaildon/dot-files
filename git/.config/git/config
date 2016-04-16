@@ -1,0 +1,8 @@
+[user]
+	email = sean@baildon.co
+	name = Sean Baildon
+[core]
+	excludesfile = ~/.config/git/ignore
+	editor = nvim
+[color]
+	ui = auto
