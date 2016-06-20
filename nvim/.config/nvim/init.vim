@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -57,8 +59,9 @@ set tm=500
 " Enable syntax highlighting
 syntax enable
 
-colorscheme desert
+let base16colorspace=256
 set background=dark
+colorscheme base16-tomorrow
 
 " Highlight current line number
 highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
@@ -142,4 +145,5 @@ autocmd BufWrite * :call DeleteTrailingWS()
 
 autocmd Filetype lua setlocal ts=2 sts=2 sw=2
 autocmd Filetype html,pug setlocal ts=4 sts=4 sw=4
+autocmd Filetype yml,yaml setlocal ts=4 sts=4 sw=4
 autocmd Filetype css,sass,scss setlocal ts=2 sts=2 sw=2
