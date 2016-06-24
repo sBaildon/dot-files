@@ -25,3 +25,6 @@
 [submodule "nvim/.config/nvim/bundle/tabular"]
 	path = nvim/.config/nvim/bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
+[submodule "nvim/.config/nvim/bundle/delimitmate"]
+	path = nvim/.config/nvim/bundle/delimitmate
+	url = https://github.com/raimondi/delimitmate.git
