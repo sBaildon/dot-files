@@ -19,12 +19,12 @@
 [submodule "nvim/.config/nvim/bundle/nerdcommenter"]
 	path = nvim/.config/nvim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
-[submodule "nvim/.config/nvim/bundle/vim-pug"]
-	path = nvim/.config/nvim/bundle/vim-pug
-	url = https://github.com/digitaltoad/vim-pug.git
 [submodule "nvim/.config/nvim/bundle/tabular"]
 	path = nvim/.config/nvim/bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
 [submodule "nvim/.config/nvim/bundle/delimitmate"]
 	path = nvim/.config/nvim/bundle/delimitmate
 	url = https://github.com/raimondi/delimitmate.git
+[submodule "nvim/.config/nvim/bundle/vim-polyglot"]
+	path = nvim/.config/nvim/bundle/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot.git
