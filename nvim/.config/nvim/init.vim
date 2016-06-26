@@ -1,3 +1,8 @@
+let g:pathogen_disabled = []
+call add(g:pathogen_disabled, "YouCompleteMe")
+if has('nvim')
+  runtime! plugin/python_setup.vim
+endif
 execute pathogen#infect()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -5,6 +10,8 @@ execute pathogen#infect()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Sets how many lines of history VIM has to remember
 set history=700
+
+set mouse=
 
 " Enable filetype plugins
 filetype plugin on
@@ -144,6 +151,7 @@ endfunc
 autocmd BufWrite * :call DeleteTrailingWS()
 
 autocmd Filetype lua setlocal ts=2 sts=2 sw=2
+autocmd Filetype json setlocal ts=2 sts=2 sw=2
 autocmd Filetype html,pug setlocal ts=4 sts=4 sw=4
 autocmd Filetype yml,yaml setlocal ts=4 sts=4 sw=4
 autocmd Filetype css,sass,scss setlocal ts=2 sts=2 sw=2
