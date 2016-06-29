@@ -1,5 +1,7 @@
 # Set colours
 eval sh $HOME/.config/base16-shell/base16-tomorrow.dark.sh
+set fish_color_command purple
+set fish_color_param cyan
 
 # XDG Specification
 set -x XDG_CONFIG_HOME "$HOME"/.config/
