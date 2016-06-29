@@ -1,5 +1,5 @@
 # Set colours
-eval sh $HOME/.config/base16-shell/base16-tomorrow.dark.sh
+eval sh $HOME/.config/base16-shell/scripts/base16-tomorrow-night.sh
 set fish_color_command purple
 set fish_color_param cyan
 
