@@ -6,3 +6,7 @@
 	editor = nvim
 [color]
 	ui = auto
+[alias]
+	co = checkout
+	cob = checkout -b
+	cm = !git add -A && git commit -m
