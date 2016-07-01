@@ -7,6 +7,7 @@
 [color]
 	ui = auto
 [alias]
+	lo = log --oneline
 	co = checkout
 	cob = checkout -b
 	cm = !git add -A && git commit -m
