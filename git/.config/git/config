@@ -11,3 +11,4 @@
 	co = checkout
 	cob = checkout -b
 	cm = !git add -A && git commit -m
+	ss = status -s
