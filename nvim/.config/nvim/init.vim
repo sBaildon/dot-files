@@ -69,6 +69,12 @@ set t_Co=256
 let base16colorspace=256
 set background=dark
 colorscheme base16-tomorrow
+let g:airline_theme='base16_tomorrow'
+
+let g:airline_left_alt_sep = ' '
+let g:airline_right_alt_sep = ' '
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
 
 " Highlight current line number
 highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
