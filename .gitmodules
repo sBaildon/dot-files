@@ -1,36 +1,47 @@
 [submodule "nvim/.config/nvim/bundle/base16-vim"]
 	path = nvim/.config/nvim/bundle/base16-vim
 	url = https://github.com/chriskempson/base16-vim.git
+	branch = master
 [submodule "nvim/.config/nvim/bundle/vim-surround"]
 	path = nvim/.config/nvim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+	branch = master
 [submodule "nvim/.config/nvim/bundle/nerdtree"]
 	path = nvim/.config/nvim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+	branch = master
 [submodule "nvim/.config/nvim/bundle/YouCompleteMe"]
 	path = nvim/.config/nvim/bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+	branch = master
 [submodule "nvim/.config/nvim/bundle/vim-airline"]
 	path = nvim/.config/nvim/bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline.git
+	branch = master
 [submodule "nvim/.config/nvim/bundle/vim-airline-themes"]
 	path = nvim/.config/nvim/bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
+	branch = master
 [submodule "nvim/.config/nvim/bundle/nerdcommenter"]
 	path = nvim/.config/nvim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+	branch = master
 [submodule "nvim/.config/nvim/bundle/tabular"]
 	path = nvim/.config/nvim/bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
+	branch = master
 [submodule "nvim/.config/nvim/bundle/delimitmate"]
 	path = nvim/.config/nvim/bundle/delimitmate
 	url = https://github.com/raimondi/delimitmate.git
+	branch = master
 [submodule "nvim/.config/nvim/bundle/vim-polyglot"]
 	path = nvim/.config/nvim/bundle/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot.git
+	branch = master
 [submodule "base16-shell/.config/base16-shell"]
 	path = base16-shell/.config/base16-shell
 	url = https://github.com/chriskempson/base16-shell.git
+	branch = master
 [submodule "nvim/.config/nvim/bundle/supertab"]
 	path = nvim/.config/nvim/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
