@@ -1,9 +1,14 @@
 let g:pathogen_disabled = []
-call add(g:pathogen_disabled, "YouCompleteMe")
 if has('nvim')
   runtime! plugin/python_setup.vim
 endif
 execute pathogen#infect()
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugins
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let g:ycm_auto_trigger=0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
