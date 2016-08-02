@@ -1,4 +1,5 @@
 let g:pathogen_disabled = []
+call add(g:pathogen_disabled, "supertab")
 if has('nvim')
   runtime! plugin/python_setup.vim
 endif
