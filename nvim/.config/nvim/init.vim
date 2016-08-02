@@ -64,6 +64,9 @@ set novisualbell
 set t_vb=
 set tm=500
 
+" Disable preview window
+set completeopt-=preview
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
