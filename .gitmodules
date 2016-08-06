@@ -42,3 +42,7 @@
 	path = nvim/.config/nvim/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
 	branch = master
+[submodule "nvim/.config/nvim/bundle/vim-fugitive"]
+	path = nvim/.config/nvim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+	branch = master
