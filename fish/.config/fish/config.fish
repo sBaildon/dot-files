@@ -29,3 +29,8 @@ set -x GOPATH "$projects"golang/
 set -x PATH /opt/local/bin /opt/local/sbin $PATH
 set -x PATH "$GOPATH"bin $PATH
 set -x PATH "$GEM_HOME"bin $PATH
+
+# Load extra files
+for f in "$XDG_CONFIG_HOME"fish/extras/*.fish
+	source $f
+end
