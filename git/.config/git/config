@@ -13,3 +13,4 @@
 	cm = !git add -A && git commit -m
 	ss = status -s
 	bl = branch --list
+	pg = log --graph --abbrev-commit --decorate --format=format:'%C(bold yellow)%h%C(reset)%C(bold green)%d%C(reset) %C(white)%s%C(reset)%C(dim white) %an (%ar) %C(reset)' --all
