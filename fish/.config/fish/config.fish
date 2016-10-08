@@ -23,9 +23,9 @@ set -x LESSHISTFILE "$XDG_DATA_HOME"less/lesshst
 
 # Specific options for me
 set -x projects "$HOME"/Projects/
-set -x work "$projects"snakeway/
 set -x GOPATH "$projects"golang/
 
 # Set path
-set -U fish_user_paths "$GOPATH"bin /opt/local/bin /opt/local/sbin
-set -U fish_user_paths "$GEM_HOME"bin $fish_user_paths
+set -x PATH /opt/local/bin /opt/local/sbin $PATH
+set -x PATH "$GOPATH"bin $PATH
+set -x PATH "$GEM_HOME"bin $PATH
