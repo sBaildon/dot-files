@@ -9,6 +9,7 @@ execute pathogen#infect()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 let g:ycm_auto_trigger=0
+let g:airline#extensions#whitespace#mixed_indent_algo = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
