@@ -14,7 +14,7 @@ set -x XDG_CONFIG_DIRS /etc/xdg
 
 # Configure programs to use XDG spec
 set -x NPM_CONFIG_USERCONFIG "$XDG_CONFIG_HOME"npm/config
-set -x GEM_HOME "$XDG_DATA_HOME"gem
+set -x GEM_HOME "$XDG_DATA_HOME"gem/
 set -x GNUPGHOME "$XDG_DATA_HOME"gnupg
 set -x INFINIT_DATA_HOME "$XDG_DATA_HOME"infinit/filesystem/
 set -x LESSHISTFILE "$XDG_DATA_HOME"less/lesshst
@@ -26,3 +26,4 @@ set -x GOPATH "$projects"golang/
 
 # Set path
 set -U fish_user_paths "$GOPATH"bin /opt/local/bin /opt/local/sbin
+set -U fish_user_paths "$GEM_HOME"bin $fish_user_paths
