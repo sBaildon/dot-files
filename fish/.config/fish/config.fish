@@ -1,6 +1,8 @@
 # Set colours
 if status --is-interactive
-	eval sh $HOME/.config/base16-shell/scripts/base16-tomorrow-night.sh
+	if test -d $HOME/.config/base16-shell/
+		eval sh $HOME/.config/base16-shell/scripts/base16-tomorrow-night.sh
+	end
 end
 set fish_color_command purple
 set fish_color_param cyan
