@@ -33,15 +33,6 @@ set -x PYTHON_EGG_CACHE "$XDG_CACHE_HOME"python-eggs
 set -x WINEPREFIX "$XDG_DATA_HOME"wine
 set -x XAUTHORITY "$XDG_RUNTIME_DIR"X11/xauthority
 
-# Specific options for me
-set -x projects "$HOME"/Projects/
-set -x GOPATH "$projects"golang/
-
-# Set path
-set -x PATH /opt/local/bin /opt/local/sbin $PATH
-set -x PATH "$GOPATH"bin $PATH
-set -x PATH "$GEM_HOME"bin $PATH
-
 # Load extra files
 for f in "$XDG_CONFIG_HOME"fish/extras/*.fish
 	source $f
