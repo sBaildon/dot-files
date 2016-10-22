@@ -23,7 +23,6 @@ set -x LESSHISTFILE "$XDG_DATA_HOME"less/history
 set -x LESSKEY "$XDG_CONFIG_HOME"less/key
 set -x CARGO_HOME "$XDG_DATA_HOME"cargo
 set -x GIMP2_DIRECTORY "$XDG_CONFIG_HOME"gimp
-set -x TMUX_TMPDIR "$XDG_RUNTIME_DIR"tmux
 set -x WEECHAT_HOME "$XDG_CONFIG_HOME"weechat
 set -x ATOM_HOME "$XDG_DATA_HOME"atom
 set -x GTK2_RC_FILES "$XDG_CONFIG_HOME"gtk-2.0/gtkrc
@@ -31,7 +30,6 @@ set -x GTK_RC_FILES "$XDG_CONFIG_HOME"gtk-1.0/gtkrc
 set -x SCREENRC "$XDG_CONFIG_HOME"screen/screenrc
 set -x PYTHON_EGG_CACHE "$XDG_CACHE_HOME"python-eggs
 set -x WINEPREFIX "$XDG_DATA_HOME"wine
-set -x XAUTHORITY "$XDG_RUNTIME_DIR"X11/xauthority
 
 # Load extra files
 for f in "$XDG_CONFIG_HOME"fish/extras/*.fish
