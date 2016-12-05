@@ -38,7 +38,3 @@
 	path = nvim/.config/nvim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 	branch = master
-[submodule "nvim/.config/nvim/bundle/YouCompleteMe"]
-	path = nvim/.config/nvim/bundle/YouCompleteMe
-	url = git@github.com:Valloric/YouCompleteMe.git
-	branch = master
