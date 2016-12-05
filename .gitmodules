@@ -22,10 +22,6 @@
 	path = nvim/.config/nvim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
 	branch = master
-[submodule "nvim/.config/nvim/bundle/tabular"]
-	path = nvim/.config/nvim/bundle/tabular
-	url = https://github.com/godlygeek/tabular.git
-	branch = master
 [submodule "nvim/.config/nvim/bundle/delimitmate"]
 	path = nvim/.config/nvim/bundle/delimitmate
 	url = https://github.com/raimondi/delimitmate.git
