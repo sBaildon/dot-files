@@ -8,7 +8,8 @@ execute pathogen#infect()
 " => Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-let g:ycm_auto_trigger=0
+let g:deoplete#enable_at_startup = 1
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 let g:airline#extensions#whitespace#mixed_indent_algo = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
