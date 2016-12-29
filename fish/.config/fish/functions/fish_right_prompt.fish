@@ -9,10 +9,10 @@ function get_git_status -d "Gets the current git status"
       echo "$dirty changed"
       echo " "
       set_color -b red
-      set_color white
+      set_color black
     else
       set_color -b cyan
-      set_color white
+      set_color black
     end
 
     echo " $ref "
