@@ -89,6 +89,10 @@ highlight CursorLine cterm=NONE ctermbg=18 ctermfg=NONE guibg=NONE guifg=NONE
 highlight CursorLineNR ctermfg=white
 set cursorline
 
+" Special highlighting
+highlight htmlArg cterm=italic
+highlight Comment cterm=italic
+
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 
