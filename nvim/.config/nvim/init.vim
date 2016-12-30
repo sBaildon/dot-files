@@ -85,8 +85,7 @@ let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 
 " Highlight current line number
-highlight CursorLine cterm=NONE ctermbg=18 ctermfg=NONE guibg=NONE guifg=NONE
-highlight CursorLineNR ctermfg=white
+highlight CursorLineNR ctermfg=21
 set cursorline
 
 " Special highlighting
