@@ -54,3 +54,7 @@
 	path = nvim/.config/nvim/bundle/deoplete-rust
 	url = https://github.com/sebastianmarkow/deoplete-rust.git
 	branch = master
+[submodule "nvim/.config/nvim/bundle/scss-syntax.vim"]
+	path = nvim/.config/nvim/bundle/scss-syntax.vim
+	url = https://github.com/cakebaker/scss-syntax.vim.git
+	branch = master
