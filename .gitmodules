@@ -46,3 +46,7 @@
 	path = nvim/.config/nvim/bundle/deoplete-typescript
 	url = https://github.com/mhartington/deoplete-typescript.git
 	branch = master
+[submodule "nvim/.config/nvim/bundle/vim-sleuth"]
+	path = nvim/.config/nvim/bundle/vim-sleuth
+	url = https://github.com/tpope/vim-sleuth.git
+	branch = master
