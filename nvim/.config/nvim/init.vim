@@ -164,3 +164,4 @@ autocmd Filetype json setlocal ts=2 sts=2 sw=2
 autocmd Filetype html,pug setlocal ts=4 sts=4 sw=4
 autocmd Filetype yml,yaml setlocal ts=4 sts=4 sw=4
 autocmd Filetype css,sass,scss setlocal ts=2 sts=2 sw=2
+let g:jsx_ext_required = 1
