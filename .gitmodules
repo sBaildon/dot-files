@@ -50,3 +50,7 @@
 	path = nvim/.config/nvim/bundle/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth.git
 	branch = master
+[submodule "nvim/.config/nvim/bundle/deoplete-rust"]
+	path = nvim/.config/nvim/bundle/deoplete-rust
+	url = https://github.com/sebastianmarkow/deoplete-rust.git
+	branch = master
