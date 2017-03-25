@@ -42,10 +42,6 @@
 	path = nvim/.config/nvim/bundle/deoplete.nvim
 	url = https://github.com/Shougo/deoplete.nvim.git
 	branch = master
-[submodule "nvim/.config/nvim/bundle/deoplete-typescript"]
-	path = nvim/.config/nvim/bundle/deoplete-typescript
-	url = https://github.com/mhartington/deoplete-typescript.git
-	branch = master
 [submodule "nvim/.config/nvim/bundle/vim-sleuth"]
 	path = nvim/.config/nvim/bundle/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth.git
@@ -61,4 +57,8 @@
 [submodule "nvim/.config/nvim/bundle/caddy.vim"]
 	path = nvim/.config/nvim/bundle/caddy.vim
 	url = https://github.com/zsiciarz/caddy.vim.git
+	branch = master
+[submodule "nvim/.config/nvim/bundle/nvim-typescript"]
+	path = nvim/.config/nvim/bundle/nvim-typescript
+	url = https://github.com/mhartington/nvim-typescript.git
 	branch = master
