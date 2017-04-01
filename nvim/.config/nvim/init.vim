@@ -14,6 +14,10 @@ let g:airline#extensions#whitespace#mixed_indent_algo = 1
 
 let g:polyglot_disabled = ['yaml']
 
+" CtrlP
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:ctrlp_user_command = ['.git', 'cd %s; and git ls-files -co --exclude-standard']
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
