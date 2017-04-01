@@ -8,11 +8,8 @@ execute pathogen#infect()
 " => Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-let g:deoplete#enable_at_startup = 1
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+" airline
 let g:airline#extensions#whitespace#mixed_indent_algo = 1
-
-let g:polyglot_disabled = ['yaml']
 
 " CtrlP
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
