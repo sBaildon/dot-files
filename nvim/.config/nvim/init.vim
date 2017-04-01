@@ -9,8 +9,6 @@ execute pathogen#infect()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Deoplete.
 let g:deoplete#enable_at_startup = 1
-let g:deoplete#complete_method = "omnifunc"
-let g:deoplete#auto_complete_delay = 0.5
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " airline
