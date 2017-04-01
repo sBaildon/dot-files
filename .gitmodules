@@ -38,31 +38,11 @@
 	path = nvim/.config/nvim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 	branch = master
-[submodule "nvim/.config/nvim/bundle/deoplete.nvim"]
-	path = nvim/.config/nvim/bundle/deoplete.nvim
-	url = https://github.com/Shougo/deoplete.nvim.git
-	branch = master
 [submodule "nvim/.config/nvim/bundle/vim-sleuth"]
 	path = nvim/.config/nvim/bundle/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth.git
 	branch = master
-[submodule "nvim/.config/nvim/bundle/deoplete-rust"]
-	path = nvim/.config/nvim/bundle/deoplete-rust
-	url = https://github.com/sebastianmarkow/deoplete-rust.git
-	branch = master
 [submodule "nvim/.config/nvim/bundle/vimwiki"]
 	path = nvim/.config/nvim/bundle/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
-	branch = master
-[submodule "nvim/.config/nvim/bundle/deoplete-go"]
-	path = nvim/.config/nvim/bundle/deoplete-go
-	url = https://github.com/zchee/deoplete-go.git
-	branch = master
-[submodule "nvim/.config/nvim/bundle/vimproc.vim"]
-	path = nvim/.config/nvim/bundle/vimproc.vim
-	url = https://github.com/Shougo/vimproc.vim.git
-	branch = master
-[submodule "nvim/.config/nvim/bundle/tsuquyomi"]
-	path = nvim/.config/nvim/bundle/tsuquyomi
-	url = https://github.com/Quramy/tsuquyomi.git
 	branch = master
