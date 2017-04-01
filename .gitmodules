@@ -58,3 +58,7 @@
 	path = nvim/.config/nvim/bundle/nvim-typescript
 	url = https://github.com/mhartington/nvim-typescript.git
 	branch = master
+[submodule "nvim/.config/nvim/bundle/deoplete-rust"]
+	path = nvim/.config/nvim/bundle/deoplete-rust
+	url = https://github.com/sebastianmarkow/deoplete-rust.git
+	branch = master

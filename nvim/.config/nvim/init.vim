@@ -7,9 +7,10 @@ execute pathogen#infect()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 " Deoplete.
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#complete_method = "omnifunc"
+let g:deoplete#auto_complete_delay = 0.5
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " airline
@@ -18,7 +19,6 @@ let g:airline#extensions#whitespace#mixed_indent_algo = 1
 " CtrlP
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 let g:ctrlp_user_command = ['.git', 'cd %s; and git ls-files -co --exclude-standard']
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
