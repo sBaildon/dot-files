@@ -8,6 +8,18 @@ execute pathogen#infect()
 " => Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Language Server
+let g:LanguageClient_serverCommands = {
+  \ 'javascript': ['javascript-typescript-langserver'],
+  \ }
+nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
+nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
+nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
+
+" Deoplete.
+let g:deoplete#enable_at_startup = 1
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+
 " airline
 let g:airline#extensions#whitespace#mixed_indent_algo = 1
 
