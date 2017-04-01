@@ -50,3 +50,7 @@
 	path = nvim/.config/nvim/bundle/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim
 	branch = master
+[submodule "nvim/.config/nvim/bundle/LanguageClient-neovim"]
+	path = nvim/.config/nvim/bundle/LanguageClient-neovim
+	url = https://github.com/autozimu/LanguageClient-neovim.git
+	branch = master
