@@ -58,3 +58,7 @@
 	path = nvim/.config/nvim/bundle/deoplete-go
 	url = https://github.com/zchee/deoplete-go.git
 	branch = master
+[submodule "nvim/.config/nvim/bundle/vimproc.vim"]
+	path = nvim/.config/nvim/bundle/vimproc.vim
+	url = https://github.com/Shougo/vimproc.vim.git
+	branch = master
