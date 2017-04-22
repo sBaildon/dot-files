@@ -143,6 +143,13 @@ map <silent> <leader><cr> :noh<cr>
 " Open NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
+" Vim Split Navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+
 " Opens a new tab with the current buffer's path
 " Super useful when editing files in the same directory
 map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
