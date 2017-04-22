@@ -1,5 +1,5 @@
 function fish_prompt
-  if [ $status = 1 ]
+  if [ $status != 0 ]
   	set_color $fish_color_error
   else
 	  set_color $fish_color_cwd
