@@ -1,5 +1,5 @@
 function fish_greeting
 	if type fortune > /dev/null
-		fortune -as
+		echo (tput sitm)(fortune -as)(tput sgr0)
 	end
 end
