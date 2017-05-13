@@ -94,6 +94,9 @@ let g:airline_right_sep = ''
 highlight CursorLineNR ctermfg=21
 set cursorline
 
+" Color Search
+highlight Search ctermfg=0 ctermbg=5
+
 " Special highlighting
 highlight htmlArg cterm=italic
 highlight Comment cterm=italic
