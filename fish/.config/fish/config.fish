@@ -32,6 +32,7 @@ set -x NPM_CONFIG_USERCONFIG "$XDG_CONFIG_HOME"/npm/config
 set -x PYTHON_EGG_CACHE "$XDG_CACHE_HOME"/python-eggs
 set -x SCREENRC "$XDG_CONFIG_HOME"/screen/screenrc
 set -x TERMINFO "$XDG_DATA_HOME"/terminfo
+set -x TIGRC_USER "$XDG_CONFIG_HOME"/tig/tigrc
 set -x WEECHAT_HOME "$XDG_CONFIG_HOME"/weechat
 set -x WINEPREFIX "$XDG_DATA_HOME"/wine
 
