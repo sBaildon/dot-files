@@ -13,6 +13,10 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " airline
 let g:airline#extensions#whitespace#mixed_indent_algo = 1
+call airline#parts#define_accent("mode", "none")
+call airline#parts#define_accent("ffenc", "none")
+call airline#parts#define_accent("linenr", "none")
+call airline#parts#define_accent("maxlinenr", "none")
 
 " CtrlP
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
