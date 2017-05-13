@@ -32,6 +32,7 @@ set -x PYTHON_EGG_CACHE "$XDG_CACHE_HOME"/python-eggs
 set -x WINEPREFIX "$XDG_DATA_HOME"/wine
 set -x TERMINFO "$XDG_DATA_HOME"/terminfo
 set -x CADDYPATH "$XDG_DATA_HOME"/caddy
+set -x ICEAUTHORITY="$XDG_CACHE_HOME"/ICEauthority
 
 # Load extra files
 for f in "$XDG_CONFIG_HOME"/fish/extras/*.fish
