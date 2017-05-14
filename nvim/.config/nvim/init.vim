@@ -1,8 +1,17 @@
-let g:pathogen_disabled = []
-if has('nvim')
-  runtime! plugin/python_setup.vim
-endif
-execute pathogen#infect()
+call plug#begin()
+
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+Plug 'chriskempson/base16-vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'zchee/deoplete-go', { 'do': 'make'}
+
+call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins
@@ -10,9 +19,11 @@ execute pathogen#infect()
 " Deoplete.
 let g:deoplete#enable_at_startup = 1
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+inoremap <expr><S-tab> pumvisible() ? "\<c-p>" : "\<S-tab>"
 
 " airline
 let g:airline#extensions#whitespace#mixed_indent_algo = 1
+" Disable bold text
 call airline#parts#define_accent("mode", "none")
 call airline#parts#define_accent("ffenc", "none")
 call airline#parts#define_accent("linenr", "none")
