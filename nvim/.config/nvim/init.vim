@@ -162,11 +162,18 @@ map <silent> <leader><cr> :noh<cr>
 " Open NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
+" Enable esc in term mode
+tnoremap <Esc> <C-\><C-n>
+
 " Vim Split Navigation
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+tnoremap <C-h> <C-\><C-N><C-w>h
+tnoremap <C-j> <C-\><C-N><C-w>j
+tnoremap <C-k> <C-\><C-N><C-w>k
+tnoremap <C-l> <C-\><C-N><C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 " Opens a new tab with the current buffer's path
 " Super useful when editing files in the same directory
