@@ -2,6 +2,7 @@ call plug#begin()
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+Plug 'Quramy/tsuquyomi', {'for': 'typescript'}
 Plug 'airblade/vim-gitgutter'
 Plug 'chriskempson/base16-vim'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -21,6 +22,11 @@ call plug#end()
 let g:deoplete#enable_at_startup = 1
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 inoremap <expr><S-tab> pumvisible() ? "\<c-p>" : "\<S-tab>"
+
+" Tsuquyomi
+autocmd FileType typescript let b:deoplete_disable_auto_complete = 1
+autocmd FileType typescript inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<c-x><c-o>"
+let g:tsuquyomi_completion_detail = 1
 
 " airline
 let g:airline#extensions#whitespace#mixed_indent_algo = 1
