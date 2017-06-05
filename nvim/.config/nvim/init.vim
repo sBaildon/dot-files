@@ -53,6 +53,10 @@ filetype plugin indent on
 " Set to auto read when a file is changed from the outside
 set autoread
 
+" Improved path autocompletion
+set wildmode=longest,list,full
+set wildmenu
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
