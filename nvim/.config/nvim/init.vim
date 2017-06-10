@@ -25,8 +25,9 @@ inoremap <expr><S-tab> pumvisible() ? "\<c-p>" : "\<S-tab>"
 
 " Tsuquyomi
 autocmd FileType typescript let b:deoplete_disable_auto_complete = 1
-autocmd FileType typescript inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<c-x><c-o>"
+autocmd FileType typescript inoremap <C-space> <C-x><C-o>
 let g:tsuquyomi_completion_detail = 1
+let g:tsuquyomi_disable_quickfix = 1
 
 " airline
 let g:airline#extensions#whitespace#mixed_indent_algo = 1
