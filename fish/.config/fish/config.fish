@@ -30,6 +30,7 @@ set -x LESSHISTFILE "$XDG_DATA_HOME"/less/history
 set -x LESSKEY "$XDG_CONFIG_HOME"/less/key
 set -x NPM_CONFIG_USERCONFIG "$XDG_CONFIG_HOME"/npm/config
 set -x PYTHON_EGG_CACHE "$XDG_CACHE_HOME"/python-eggs
+set -x RUSTUP_HOME "$XDG_DATA_HOME"/rustup
 set -x SCREENRC "$XDG_CONFIG_HOME"/screen/screenrc
 set -x TERMINFO "$XDG_DATA_HOME"/terminfo
 set -x TIGRC_USER "$XDG_CONFIG_HOME"/tig/tigrc
