@@ -42,6 +42,14 @@ set -x WGETRC "$XDG_CONFIG_HOME"/wget/config
 set -x WINEPREFIX "$XDG_DATA_HOME"/wine
 set -x __GL_SHADER_DISK_CACHE_PATH "$XDG_CACHE_HOME"/nv
 
+# Path stuff
+if status --is-login
+	set -x PATH "$GOPATH"/bin $PATH
+	set -x PATH "$GEM_HOME"/bin $PATH
+	set -x PATH "$XDG_DATA_HOME"/npm/bin $PATH
+	set -x PATH "$XDG_DATA_HOME"/cargo/bin $PATH
+end
+
 # Load extra files
 for f in "$XDG_CONFIG_HOME"/fish/{extras,os}/*.fish
 	source $f
