@@ -18,6 +18,7 @@ set -x XDG_CONFIG_DIRS /etc/xdg
 set -x ATOM_HOME "$XDG_DATA_HOME"/atom
 set -x CADDYPATH "$XDG_DATA_HOME"/caddy
 set -x CARGO_HOME "$XDG_DATA_HOME"/cargo
+set -x CUDA_CACHE_PATH "$XDG_CACHE_HOME"/nv
 set -x GEM_HOME "$XDG_DATA_HOME"/gem
 set -x GIMP2_DIRECTORY "$XDG_CONFIG_HOME"/gimp
 set -x GNUPGHOME "$XDG_DATA_HOME"/gnupg
@@ -29,14 +30,17 @@ set -x INFINIT_DATA_HOME "$XDG_DATA_HOME"/infinit/filesystem
 set -x LESSHISTFILE "$XDG_DATA_HOME"/less/history
 set -x LESSKEY "$XDG_CONFIG_HOME"/less/key
 set -x NPM_CONFIG_USERCONFIG "$XDG_CONFIG_HOME"/npm/config
+set -x PASSWORD_STORE_DIR "$XDG_DATA_HOME"/pass
 set -x PYTHON_EGG_CACHE "$XDG_CACHE_HOME"/python-eggs
 set -x RUSTUP_HOME "$XDG_DATA_HOME"/rustup
 set -x SCREENRC "$XDG_CONFIG_HOME"/screen/screenrc
 set -x TERMINFO "$XDG_DATA_HOME"/terminfo
 set -x TIGRC_USER "$XDG_CONFIG_HOME"/tig/tigrc
+set -x UNISON "$XDG_DATA_HOME"/unison
 set -x WEECHAT_HOME "$XDG_CONFIG_HOME"/weechat
 set -x WGETRC "$XDG_CONFIG_HOME"/wget/config
 set -x WINEPREFIX "$XDG_DATA_HOME"/wine
+set -x __GL_SHADER_DISK_CACHE_PATH "$XDG_CACHE_HOME"/nv
 
 # Load extra files
 for f in "$XDG_CONFIG_HOME"/fish/extras/*.fish
