@@ -22,6 +22,7 @@ set -x CUDA_CACHE_PATH "$XDG_CACHE_HOME"/nv
 set -x GEM_HOME "$XDG_DATA_HOME"/gem
 set -x GIMP2_DIRECTORY "$XDG_CONFIG_HOME"/gimp
 set -x GNUPGHOME "$XDG_DATA_HOME"/gnupg
+set -x GRADLE_USER_HOME "$XDG_DATA_HOME"/gradle
 set -x GTK2_RC_FILES "$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
 set -x GTK_RC_FILES "$XDG_CONFIG_HOME"/gtk-1.0/gtkrc
 set -x HISTFILE "$XDG_DATA_HOME"/bash/history
