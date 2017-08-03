@@ -51,12 +51,10 @@ set -x __GL_SHADER_DISK_CACHE_PATH "$XDG_CACHE_HOME"/nv
 set -x GOPATH ~/Projects/golang
 
 # Path stuff
-if status --is-login
-	set -x PATH "$GOPATH"/bin $PATH
-	set -x PATH "$GEM_HOME"/bin $PATH
-	set -x PATH "$XDG_DATA_HOME"/npm/bin $PATH
-	set -x PATH "$XDG_DATA_HOME"/cargo/bin $PATH
-end
+path_if "$GOPATH"/bin
+path_if "$GEM_HOME"/bin
+path_if "$XDG_DATA_HOME"/npm/bin
+path_if "$XDG_DATA_HOME"/cargo/bin
 
 # Load extra files
 for f in "$XDG_CONFIG_HOME"/fish/{extras,os}/*.fish
