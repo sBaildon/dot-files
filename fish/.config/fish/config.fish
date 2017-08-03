@@ -31,6 +31,10 @@ set -x LESSHISTFILE "$XDG_DATA_HOME"/less/history
 set -x LESSKEY "$XDG_CONFIG_HOME"/less/key
 set -x NPM_CONFIG_USERCONFIG "$XDG_CONFIG_HOME"/npm/config
 set -x PASSWORD_STORE_DIR "$XDG_DATA_HOME"/pass
+set -x PGPASSFILE "$XDG_CONFIG_HOME"/pg/pgpass
+set -x PGSERVICEFILE "$XDG_CONFIG_HOME"/pg/pg_service.conf
+set -x PSQLRC "$XDG_CONFIG_HOME"/pg/psqlrc
+set -x PSQL_HISTORY "$XDG_CACHE_HOME"/pg/psql_history
 set -x PYTHON_EGG_CACHE "$XDG_CACHE_HOME"/python-eggs
 set -x RUSTUP_HOME "$XDG_DATA_HOME"/rustup
 set -x SCREENRC "$XDG_CONFIG_HOME"/screen/screenrc
