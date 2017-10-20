@@ -3,9 +3,9 @@ if test -d $HOME/.config/base16-shell/
 	if status --is-interactive
 		eval sh $HOME/.config/base16-shell/scripts/base16-tomorrow-night.sh
 	end
-	set fish_color_command purple
-	set fish_color_param cyan
 end
+set fish_color_command purple
+set fish_color_param cyan
 
 # XDG Specification
 set -x XDG_CONFIG_HOME "$HOME"/.config

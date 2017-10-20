@@ -115,7 +115,7 @@ set completeopt-=preview
 " Enable syntax highlighting
 syntax enable
 
-let base16colorspace=256
+"let base16colorspace=256
 colorscheme base16-tomorrow-night
 let g:airline_theme='base16_tomorrow'
 
@@ -125,7 +125,7 @@ let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 
 " Highlight current line number
-highlight CursorLineNR ctermfg=21
+highlight CursorLineNR ctermfg=13
 set cursorline
 
 " Color Search
