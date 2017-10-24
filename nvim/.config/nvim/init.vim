@@ -14,6 +14,7 @@ Plug 'ianks/vim-tsx'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'zchee/deoplete-go', { 'do': 'make'}
+Plug 'w0rp/ale'
 
 call plug#end()
 
