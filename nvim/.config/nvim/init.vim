@@ -33,6 +33,9 @@ autocmd FileType typescript inoremap <C-space> <C-x><C-o>
 let g:tsuquyomi_completion_detail = 1
 let g:tsuquyomi_disable_quickfix = 1
 
+" NERDTree
+let g:NERDTreeBookmarksFile = $XDG_DATA_HOME.'/nvim/NERDTreeBookmarks'
+
 " airline
 let g:airline#extensions#whitespace#mixed_indent_algo = 1
 let g:airline#extensions#tabline#enabled = 1
