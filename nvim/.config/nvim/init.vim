@@ -15,6 +15,7 @@ Plug 'ianks/vim-tsx'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'zchee/deoplete-go', { 'do': 'make'}
+Plug 'racer-rust/vim-racer'
 Plug 'w0rp/ale'
 
 call plug#end()
@@ -32,6 +33,11 @@ autocmd FileType typescript let b:deoplete_disable_auto_complete = 1
 autocmd FileType typescript inoremap <C-space> <C-x><C-o>
 let g:tsuquyomi_completion_detail = 1
 let g:tsuquyomi_disable_quickfix = 1
+
+" Racer
+set hidden
+let g:racer_cmd = $XDG_DATA_HOME.'/cargo/bin/racer'
+let g:racer_experimental_completer = 1
 
 " NERDTree
 let g:NERDTreeBookmarksFile = $XDG_DATA_HOME.'/nvim/NERDTreeBookmarks'

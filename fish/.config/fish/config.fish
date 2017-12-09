@@ -48,6 +48,9 @@ set -x __GL_SHADER_DISK_CACHE_PATH "$XDG_CACHE_HOME"/nv
 # Other
 set -x GOPATH ~/Projects/golang
 set -x ANSIBLE_NOCOWS 1
+if type -q rustc
+	set -x RUST_SRC_PATH (rustc --print sysroot)/lib/rustlib/src/rust/src
+end
 
 # Path stuff
 path_if "$GOPATH"/bin
