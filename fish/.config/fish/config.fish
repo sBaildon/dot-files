@@ -39,6 +39,7 @@ set -x RUSTUP_HOME "$XDG_DATA_HOME"/rustup
 set -x SCREENRC "$XDG_CONFIG_HOME"/screen/screenrc
 set -x TERMINFO "$XDG_DATA_HOME"/terminfo
 set -x TIGRC_USER "$XDG_CONFIG_HOME"/tig/tigrc
+set -x TMUX_PLUGIN_MANAGER_PATH "$XDG_DATA_HOME"/tmux/plugins
 set -x UNISON "$XDG_DATA_HOME"/unison
 set -x WEECHAT_HOME "$XDG_CONFIG_HOME"/weechat
 set -x WGETRC "$XDG_CONFIG_HOME"/wget/config
