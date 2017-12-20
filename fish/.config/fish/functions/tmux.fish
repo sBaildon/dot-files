@@ -1,3 +1,3 @@
 function tmux
-	command tmux -f ~/.config/tmux/tmux.config $argv
+	command tmux -f $XDG_CONFIG_HOME/tmux/tmux.config $argv
 end
