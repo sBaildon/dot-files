@@ -7,3 +7,4 @@ set -x HOMEBREW_NO_ANALYTICS 1
 
 path_if /usr/local/opt/curl/bin
 path_if /Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin/
+path_if ~/Library/Python/3.6/bin/
