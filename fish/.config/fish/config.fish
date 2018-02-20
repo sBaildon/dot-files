@@ -35,6 +35,7 @@ set -x PGSERVICEFILE "$XDG_CONFIG_HOME"/pg/pg_service.conf
 set -x PSQLRC "$XDG_CONFIG_HOME"/pg/psqlrc
 set -x PSQL_HISTORY "$XDG_CACHE_HOME"/pg/psql_history
 set -x PYTHON_EGG_CACHE "$XDG_CACHE_HOME"/python-eggs
+set -x RIPGREP_CONFIG_PATH "$XDG_CONFIG_HOME"/rg/.ripgreprc
 set -x RUSTUP_HOME "$XDG_DATA_HOME"/rustup
 set -x SCREENRC "$XDG_CONFIG_HOME"/screen/screenrc
 set -x TERMINFO "$XDG_DATA_HOME"/terminfo
