@@ -15,3 +15,5 @@
 	bl = branch --list
 	pg = "!git log --decorate --graph --oneline --all -n $(expr $(tput lines) / 2)"
 	pgl = "!git log --decorate --graph --oneline --all"
+[includeIf "gitdir:**/truelayer/**"]
+	path = ~/.config/git/truelayer
