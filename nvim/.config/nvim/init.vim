@@ -126,7 +126,7 @@ set completeopt-=preview
 " Enable syntax highlighting
 syntax enable
 
-"let base16colorspace=256
+let base16colorspace=256
 colorscheme base16-tomorrow-night
 let g:airline_theme='base16_tomorrow'
 
