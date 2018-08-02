@@ -28,6 +28,7 @@ set -x ICEAUTHORITY "$XDG_CACHE_HOME"/ICEauthority
 set -x INFINIT_DATA_HOME "$XDG_DATA_HOME"/infinit/filesystem
 set -x LESSHISTFILE "$XDG_DATA_HOME"/less/history
 set -x LESSKEY "$XDG_CONFIG_HOME"/less/key
+set -x N_PREFIX "$XDG_DATA_HOME"
 set -x NPM_CONFIG_USERCONFIG "$XDG_CONFIG_HOME"/npm/config
 set -x PASSWORD_STORE_DIR "$XDG_DATA_HOME"/pass
 set -x PGPASSFILE "$XDG_CONFIG_HOME"/pg/pgpass
@@ -59,6 +60,7 @@ path_if "$GOPATH"/bin
 path_if "$GEM_HOME"/bin
 path_if "$XDG_DATA_HOME"/npm/bin
 path_if "$XDG_DATA_HOME"/cargo/bin
+path_if "$XDG_DATA_HOME"/bin
 
 # Load extra files
 for f in "$XDG_CONFIG_HOME"/fish/{extras,os}/*.fish
