@@ -1,10 +1,3 @@
-# Set colours
-if test -d $HOME/.config/base16-shell/; and status --is-interactive
-	eval sh $HOME/.config/base16-shell/scripts/base16-tomorrow.sh
-end
-set fish_color_command purple
-set fish_color_param cyan
-
 # XDG Specification
 set -x XDG_CONFIG_HOME "$HOME"/.config
 set -x XDG_CACHE_HOME "$HOME"/.cache
@@ -62,7 +55,15 @@ path_if "$XDG_DATA_HOME"/npm/bin
 path_if "$XDG_DATA_HOME"/cargo/bin
 path_if "$XDG_DATA_HOME"/bin
 
+set -x PATH node_modules/.bin $PATH
 # Load extra files
 for f in "$XDG_CONFIG_HOME"/fish/{extras,os}/*.fish
 	source $f
 end
+
+# Set colours
+if test -d $XDG_CONFIG_HOME/base16-fzf/fish/base16-tomorrow.fish/base16-shell/; and status --is-interactive
+	eval sh $XDG_CONFIG_HOME/base16-shell/scripts/base16-tomorrow.sh
+end
+set fish_color_command purple
+set fish_color_param cyan
