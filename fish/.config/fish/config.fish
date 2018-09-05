@@ -62,7 +62,7 @@ for f in "$XDG_CONFIG_HOME"/fish/{extras,os}/*.fish
 end
 
 # Set colours
-if test -d $XDG_CONFIG_HOME/base16-fzf/fish/base16-tomorrow.fish/base16-shell/; and status --is-interactive
+if test -d $XDG_CONFIG_HOME/base16-shell; and status --is-interactive
 	eval sh $XDG_CONFIG_HOME/base16-shell/scripts/base16-tomorrow.sh
 end
 set fish_color_command purple
