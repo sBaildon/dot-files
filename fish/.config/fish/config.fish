@@ -17,6 +17,7 @@ set -x GRADLE_USER_HOME "$XDG_DATA_HOME"/gradle
 set -x GTK2_RC_FILES "$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
 set -x GTK_RC_FILES "$XDG_CONFIG_HOME"/gtk-1.0/gtkrc
 set -x HISTFILE "$XDG_DATA_HOME"/bash/history
+set -x HTTPIE_CONFIG_DIR "$XDG_CONFIG_HOME"/httpie
 set -x ICEAUTHORITY "$XDG_CACHE_HOME"/ICEauthority
 set -x INFINIT_DATA_HOME "$XDG_DATA_HOME"/infinit/filesystem
 set -x LESSHISTFILE "$XDG_DATA_HOME"/less/history
