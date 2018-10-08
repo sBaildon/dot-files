@@ -17,3 +17,5 @@
 	pgl = "!git log --decorate --graph --oneline --all"
 [includeIf "gitdir:**/truelayer/**"]
 	path = ~/.config/git/truelayer
+[url "git@github.com:"]
+	insteadOf = https://github.com/
