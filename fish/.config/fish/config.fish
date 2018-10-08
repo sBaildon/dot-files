@@ -58,7 +58,6 @@ path_if "$XDG_DATA_HOME"/cargo/bin
 path_if "$XDG_DATA_HOME"/bin
 path_if "$PYENV_ROOT"/shims
 
-set -x PATH node_modules/.bin $PATH
 # Load extra files
 for f in "$XDG_CONFIG_HOME"/fish/{extras,os}/*.fish
 	source $f
