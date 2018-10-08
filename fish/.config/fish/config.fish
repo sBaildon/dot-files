@@ -28,6 +28,7 @@ set -x PGPASSFILE "$XDG_CONFIG_HOME"/pg/pgpass
 set -x PGSERVICEFILE "$XDG_CONFIG_HOME"/pg/pg_service.conf
 set -x PSQLRC "$XDG_CONFIG_HOME"/pg/psqlrc
 set -x PSQL_HISTORY "$XDG_CACHE_HOME"/pg/psql_history
+set -x PYENV_ROOT "$XDG_DATA_HOME"/pyenv
 set -x PYTHON_EGG_CACHE "$XDG_CACHE_HOME"/python-eggs
 set -x RIPGREP_CONFIG_PATH "$XDG_CONFIG_HOME"/rg/.ripgreprc
 set -x RUSTUP_HOME "$XDG_DATA_HOME"/rustup
@@ -54,6 +55,7 @@ path_if "$GEM_HOME"/bin
 path_if "$XDG_DATA_HOME"/npm/bin
 path_if "$XDG_DATA_HOME"/cargo/bin
 path_if "$XDG_DATA_HOME"/bin
+path_if "$PYENV_ROOT"/shims
 
 set -x PATH node_modules/.bin $PATH
 # Load extra files
