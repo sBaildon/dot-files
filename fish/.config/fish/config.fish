@@ -7,6 +7,8 @@ set -x XDG_CONFIG_DIRS /etc/xdg
 
 # Configure programs to use XDG spec
 set -x ATOM_HOME "$XDG_DATA_HOME"/atom
+set -x AWS_SHARED_CREDENTIALS_FILE "$XDG_CONFIG_HOME"/aws/credentials
+set -x AWS_CONFIG_FILE "$XDG_CONFIG_HOME"/aws/config
 set -x CADDYPATH "$XDG_DATA_HOME"/caddy
 set -x CARGO_HOME "$XDG_DATA_HOME"/cargo
 set -x CUDA_CACHE_PATH "$XDG_CACHE_HOME"/nv
