@@ -12,6 +12,7 @@ set -x AWS_CONFIG_FILE "$XDG_CONFIG_HOME"/aws/config
 set -x CADDYPATH "$XDG_DATA_HOME"/caddy
 set -x CARGO_HOME "$XDG_DATA_HOME"/cargo
 set -x CUDA_CACHE_PATH "$XDG_CACHE_HOME"/nv
+set -x DOCKER_CONFIG "$XDG_CONFIG_HOME"/docker
 set -x GEM_HOME "$XDG_DATA_HOME"/gem
 set -x GIMP2_DIRECTORY "$XDG_CONFIG_HOME"/gimp
 set -x GNUPGHOME "$XDG_DATA_HOME"/gnupg
