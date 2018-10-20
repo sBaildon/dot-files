@@ -27,6 +27,8 @@ set -x LESSHISTFILE "$XDG_DATA_HOME"/less/history
 set -x LESSKEY "$XDG_CONFIG_HOME"/less/key
 set -x N_PREFIX "$XDG_DATA_HOME"
 set -x NPM_CONFIG_USERCONFIG "$XDG_CONFIG_HOME"/npm/config
+set -x NPM_CONFIG_DEVDIR "$XDG_CACHE_HOME"/npm/node-gyp
+set -x NODE_REPL_HISTORY "$XDG_CACHE_HOME"/node/repl_history
 set -x PASSWORD_STORE_DIR "$XDG_DATA_HOME"/pass
 set -x PGPASSFILE "$XDG_CONFIG_HOME"/pg/pgpass
 set -x PGSERVICEFILE "$XDG_CONFIG_HOME"/pg/pg_service.conf
