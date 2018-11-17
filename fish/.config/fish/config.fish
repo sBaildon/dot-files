@@ -13,7 +13,6 @@ set -x CADDYPATH "$XDG_DATA_HOME"/caddy
 set -x CARGO_HOME "$XDG_DATA_HOME"/cargo
 set -x CUDA_CACHE_PATH "$XDG_CACHE_HOME"/nv
 set -x DOCKER_CONFIG "$XDG_CONFIG_HOME"/docker
-set -x GEM_HOME "$XDG_DATA_HOME"/gem
 set -x GIMP2_DIRECTORY "$XDG_CONFIG_HOME"/gimp
 set -x GNUPGHOME "$XDG_DATA_HOME"/gnupg
 set -x GRADLE_USER_HOME "$XDG_DATA_HOME"/gradle
@@ -38,6 +37,7 @@ set -x PSQLRC "$XDG_CONFIG_HOME"/pg/psqlrc
 set -x PSQL_HISTORY "$XDG_CACHE_HOME"/pg/psql_history
 set -x PYENV_ROOT "$XDG_DATA_HOME"/pyenv
 set -x PYTHON_EGG_CACHE "$XDG_CACHE_HOME"/python-eggs
+set -x RBENV_ROOT "$XDG_DATA_HOME"/rbenv
 set -x RIPGREP_CONFIG_PATH "$XDG_CONFIG_HOME"/rg/.ripgreprc
 set -x RUSTUP_HOME "$XDG_DATA_HOME"/rustup
 set -x SCREENRC "$XDG_CONFIG_HOME"/screen/screenrc
@@ -59,11 +59,11 @@ end
 
 # Path stuff
 path_if "$GOPATH"/bin
-path_if "$GEM_HOME"/bin
 path_if "$XDG_DATA_HOME"/npm/bin
 path_if "$XDG_DATA_HOME"/cargo/bin
 path_if "$XDG_DATA_HOME"/bin
 path_if "$PYENV_ROOT"/shims
+path_if "$RBENV_ROOT"/shims
 
 # Load extra files
 for f in "$XDG_CONFIG_HOME"/fish/{extras,os}/*.fish
