@@ -88,3 +88,5 @@ $RECYCLE.BIN/
 .vscode/*
 
 # End of https://www.gitignore.io/api/visualstudiocode
+#
+.ruby-version
