@@ -20,3 +20,5 @@
 	path = ~/.config/git/truelayer
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[credential]
+	helper = manager
