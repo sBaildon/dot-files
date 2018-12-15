@@ -15,6 +15,7 @@
 	bl = branch --list
 	pg = "!git log --decorate --graph --oneline --all -n $(expr $(tput lines) / 2)"
 	pgl = "!git log --decorate --graph --oneline --all"
+	lv = tag -l --sort version:refname
 [includeIf "gitdir:**/truelayer/**"]
 	path = ~/.config/git/truelayer
 [url "git@github.com:"]
