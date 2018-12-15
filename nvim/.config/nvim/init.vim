@@ -17,6 +17,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'zchee/deoplete-go', { 'do': 'make'}
 Plug 'racer-rust/vim-racer'
 Plug 'w0rp/ale'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
@@ -58,6 +59,9 @@ call airline#parts#define_accent("maxlinenr", "none")
 " CtrlP
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 let g:ctrlp_user_command = ['.git', 'cd %s; and git ls-files -co --exclude-standard']
+
+" vimwiki
+let g:vimwiki_list = [{'path': '$HOME/Projects/wiki'}]
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
