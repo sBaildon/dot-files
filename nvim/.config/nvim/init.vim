@@ -1,21 +1,14 @@
 call plug#begin()
 
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-Plug 'Quramy/tsuquyomi', {'for': 'typescript'}
 Plug 'airblade/vim-gitgutter'
 Plug 'chriskempson/base16-vim'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
-Plug 'ianks/vim-tsx'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'zchee/deoplete-go', { 'do': 'make'}
-Plug 'racer-rust/vim-racer'
 Plug 'w0rp/ale'
 Plug 'vimwiki/vimwiki'
 
@@ -24,22 +17,6 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Deoplete.
-let g:deoplete#enable_at_startup = 1
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-inoremap <expr><S-tab> pumvisible() ? "\<c-p>" : "\<S-tab>"
-
-" Tsuquyomi
-autocmd FileType typescript let b:deoplete_disable_auto_complete = 1
-autocmd FileType typescript inoremap <C-space> <C-x><C-o>
-let g:tsuquyomi_completion_detail = 1
-let g:tsuquyomi_disable_quickfix = 1
-
-" Racer
-set hidden
-let g:racer_cmd = $XDG_DATA_HOME.'/cargo/bin/racer'
-let g:racer_experimental_completer = 1
-
 " NERDTree
 let g:NERDTreeBookmarksFile = $XDG_DATA_HOME.'/nvim/NERDTreeBookmarks'
 
