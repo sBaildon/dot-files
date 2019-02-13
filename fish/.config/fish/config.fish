@@ -54,6 +54,7 @@ set -x __GL_SHADER_DISK_CACHE_PATH "$XDG_CACHE_HOME"/nv
 set -x GOPATH ~/Projects/golang
 set -x ANSIBLE_NOCOWS 1
 set -x DOTNET_CLI_TELEMETRY_OPTOUT 1
+set -x AWS_PROFILE personal
 if type -q rustc
 	set -x RUST_SRC_PATH (rustc --print sysroot)/lib/rustlib/src/rust/src
 end
@@ -77,6 +78,3 @@ if test -d $XDG_CONFIG_HOME/base16-shell; and status --is-interactive
 end
 set fish_color_command purple
 set fish_color_param cyan
-
-set -x AWS_PROFILE personal
-set -x DOTNET_CLI_TELEMETRY_OPTOUT 1
