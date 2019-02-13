@@ -8,8 +8,10 @@ function fish_prompt
 
   set -l jobs (jobs | wc -l | xargs)
   if [ "$jobs" != "0" ]
+    set_color normal
+    echo -n ":"
     set_color yellow
-    echo -n " [$jobs]"
+    echo -n "$jobs"
   end
 
   set_color normal
