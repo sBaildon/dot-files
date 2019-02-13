@@ -77,3 +77,6 @@ if test -d $XDG_CONFIG_HOME/base16-shell; and status --is-interactive
 end
 set fish_color_command purple
 set fish_color_param cyan
+
+set -x AWS_PROFILE personal
+set -x DOTNET_CLI_TELEMETRY_OPTOUT 1
