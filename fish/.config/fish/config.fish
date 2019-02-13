@@ -59,12 +59,12 @@ if type -q rustc
 end
 
 # Path stuff
-path_if "$GOPATH"/bin
-path_if "$XDG_DATA_HOME"/npm/bin
-path_if "$XDG_DATA_HOME"/cargo/bin
-path_if "$XDG_DATA_HOME"/bin
-path_if "$PYENV_ROOT"/shims
-path_if "$RBENV_ROOT"/shims
+set fish_user_paths "$GOPATH"/bin $fish_user_paths
+set fish_user_paths "$XDG_DATA_HOME"/npm/bin $fish_user_paths
+set fish_user_paths "$XDG_DATA_HOME"/cargo/bin $fish_user_paths
+set fish_user_paths "$XDG_DATA_HOME"/bin $fish_user_paths
+set fish_user_paths "$PYENV_ROOT"/shims $fish_user_paths
+set fish_user_paths "$RBENV_ROOT"/shims $fish_user_paths
 
 # Load extra files
 for f in "$XDG_CONFIG_HOME"/fish/{extras,os}/*.fish
