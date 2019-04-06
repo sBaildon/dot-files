@@ -6,3 +6,7 @@
 	path = tmux/.config/tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
 	branch = master
+[submodule "bat/.config/bat/themes/base16-textmate"]
+	path = bat/.config/bat/themes/base16-textmate
+	url = git@github.com:chriskempson/base16-textmate.git
+	branch = master
