@@ -6,9 +6,6 @@ import:
 asciify_paths: yes
 ui:
     color: yes
-plugins: scrub fetchart embedart duplicates
+plugins: scrub embedart duplicates
 scrub:
     auto: yes
-fetchart:
-    sources: albumart itunes coverart *
-
