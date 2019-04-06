@@ -11,13 +11,13 @@
 	co = checkout
 	cob = checkout -b
 	cm = !git add -A && git commit -m
-	ss = status -s
+	ss = status --short
 	bl = branch --list
 	pg = "!git log --decorate --graph --oneline --all -n $(expr $(tput lines) / 2)"
 	pgl = "!git log --decorate --graph --oneline --all"
 	fap = fetch --all --prune
 	lv = tag -l --sort version:refname
-	fs = !git ss | fzf -m | awk '{print $2}'
+	sl = !git status --porcelain | awk '{print $2}'
 [includeIf "gitdir:**/truelayer/**"]
 	path = ~/.config/git/truelayer
 [url "git@github.com:"]
