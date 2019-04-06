@@ -59,7 +59,10 @@ if type -q rustc
 	set -x RUST_SRC_PATH (rustc --print sysroot)/lib/rustlib/src/rust/src
 end
 
+set -x FZF_DEFAULT_OPTS "--color=light"
+
 # Path stuff
+set fish_user_paths ~/.local/bin
 set fish_user_paths "$GOPATH"/bin $fish_user_paths
 set fish_user_paths "$XDG_DATA_HOME"/npm/bin $fish_user_paths
 set fish_user_paths "$XDG_DATA_HOME"/cargo/bin $fish_user_paths
