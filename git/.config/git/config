@@ -17,6 +17,7 @@
 	pgl = "!git log --decorate --graph --oneline --all"
 	fap = fetch --all --prune
 	lv = tag -l --sort version:refname
+	fs = !git ss | fzf | awk '{print $2}'
 [includeIf "gitdir:**/truelayer/**"]
 	path = ~/.config/git/truelayer
 [url "git@github.com:"]
