@@ -59,7 +59,7 @@ if type -q rustc
 	set -x RUST_SRC_PATH (rustc --print sysroot)/lib/rustlib/src/rust/src
 end
 
-set -x FZF_DEFAULT_OPTS "--color=light"
+set -x FZF_DEFAULT_OPTS "--color=light --multi"
 
 # Path stuff
 set fish_user_paths ~/.local/bin
