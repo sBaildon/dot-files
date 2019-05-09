@@ -75,9 +75,17 @@ for f in "$XDG_CONFIG_HOME"/fish/{extras,os}/*.fish
 	source $f
 end
 
+# Use fisher
+if not functions -q fisher
+    set -q XDG_CONFIG_HOME; or set XDG_CONFIG_HOME ~/.config
+    curl https://git.io/fisher --create-dirs -sLo $XDG_CONFIG_HOME/fish/functions/fisher.fish
+    fish -c fisher
+end
+
 # Set colours
 if test -d $XDG_CONFIG_HOME/base16-shell; and status --is-interactive
 	eval sh $XDG_CONFIG_HOME/base16-shell/scripts/base16-tomorrow.sh
 end
 set fish_color_command purple
 set fish_color_param cyan
+
