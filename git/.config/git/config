@@ -17,7 +17,8 @@
 	pgl = "!git log --decorate --graph --oneline --all"
 	fap = fetch --all --prune
 	lv = tag -l --sort version:refname
-	sl = !git status --porcelain | awk '{print $2}'
+	sl = "status --short"
+	unstage = 'reset HEAD --'
 [includeIf "gitdir:**/truelayer/**"]
 	path = ~/.config/git/truelayer
 [url "git@github.com:"]
