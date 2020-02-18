@@ -19,8 +19,6 @@
 	lv = tag -l --sort version:refname
 	sl = "status --short"
 	unstage = 'reset HEAD --'
-[includeIf "gitdir:**/truelayer/**"]
-	path = ~/.config/git/truelayer
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 [credential]
