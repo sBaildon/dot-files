@@ -1,4 +1,4 @@
 *
 !.gitignore
-!keybindings.json
-!settings.json
+!User/keybindings.json
+!User/settings.json
