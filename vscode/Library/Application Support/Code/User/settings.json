@@ -1,5 +1,6 @@
 {
     "editor.fontFamily": "Operator Mono, SF Mono, Menlo, monospace",
+    "editor.fontLigatures": true,
     "editor.fontSize": 13,
     "editor.fontWeight": "500",
     "editor.minimap.enabled": false,
@@ -7,6 +8,7 @@
     "files.autoSave": "onFocusChange",
     "files.autoSaveDelay": 0,
     "go.useLanguageServer": true,
+    "telemetry.enableTelemetry": false,
     "window.nativeTabs": true,
     "workbench.colorTheme": "Tomorrow Operator Mono",
     "workbench.tree.indent": 24,
