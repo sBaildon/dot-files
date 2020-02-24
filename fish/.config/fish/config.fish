@@ -83,7 +83,7 @@ if not functions -q fisher
 end
 
 if type -q gpg; and not test -d $GNUPGHOME
-	mkdir -p $GNUPGHOME
+	mkdir -p -m 700 $GNUPGHOME
 end
 
 # Set colours
