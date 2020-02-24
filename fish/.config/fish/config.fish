@@ -82,8 +82,12 @@ if not functions -q fisher
 	fish -c fisher
 end
 
-if type -q gpg; and not test -d $GNUPGHOME
-	mkdir -p -m 700 $GNUPGHOME
+if type -q gpg
+	if not test -d $GNUPGHOME
+		mkdir -p -m 700 $GNUPGHOME
+	end
+
+	set -x SSH_AUTH_SOCK (gpgconf --list-dirs agent-ssh-socket)
 end
 
 # Set colours
