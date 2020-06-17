@@ -1,0 +1,12 @@
+window:
+  padding:
+    x: 0
+    y: 0
+  decorations: full
+font:
+  normal:
+    family: "SF Mono"
+    style: "Regular"
+  bold:
+    style: "Semibold"
+  size: 11
