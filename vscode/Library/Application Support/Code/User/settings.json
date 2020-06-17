@@ -19,4 +19,8 @@
     "workbench.preferredDarkColorTheme": "Tomorrow Night Operator Mono",
     "workbench.preferredLightColorTheme": "Tomorrow Operator Mono",
     "workbench.tree.indent": 24,
+    "workbench.startupEditor": "newUntitledFile",
+    "files.associations": {
+        "*.tfvars": "terraform"
+    },
 }
