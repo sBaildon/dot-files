@@ -15,12 +15,16 @@
     "telemetry.enableTelemetry": false,
     "window.autoDetectColorScheme": true,
     "window.nativeTabs": true,
-    "workbench.colorTheme": "Tomorrow Operator Mono",
-    "workbench.preferredDarkColorTheme": "Tomorrow Night Operator Mono",
-    "workbench.preferredLightColorTheme": "Tomorrow Operator Mono",
+    "workbench.colorTheme": "GitHub Light",
+    "workbench.preferredDarkColorTheme": "Github Dark",
+    "workbench.preferredLightColorTheme": "Github Light",
     "workbench.tree.indent": 24,
     "workbench.startupEditor": "newUntitledFile",
     "files.associations": {
         "*.tfvars": "terraform"
+    },
+    "launch": {
+
+
     },
 }
