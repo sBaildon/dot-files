@@ -1,4 +1,4 @@
-# dotfiles 
+# dotfiles
 
 A collection of configuration files for *nix systems.
 
@@ -6,7 +6,7 @@ A collection of configuration files for *nix systems.
 
 Configuration sets are best installed as a symlink using `stow`. Pick and choose which configuration sets you're interested in.
 
-`stow --target=~ git nvim fish ...`
+`stow git nvim fish ...`
 
 ### Terminal Information
 
