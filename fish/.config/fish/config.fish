@@ -9,10 +9,15 @@ set -x XDG_CONFIG_DIRS /etc/xdg
 set -x ATOM_HOME "$XDG_DATA_HOME"/atom
 set -x AWS_SHARED_CREDENTIALS_FILE "$XDG_CONFIG_HOME"/aws/credentials
 set -x AWS_CONFIG_FILE "$XDG_CONFIG_HOME"/aws/config
+set -x BUNDLE_USER_CONFIG "$XDG_CONFIG_HOME"/bundle
+set -x BUNDLE_USER_CACHE "$XDG_CACHE_HOME"/bundle
+set -x BUNDLE_USER_PLUGIN "$XDG_DATA_HOME"/bundle
 set -x CADDYPATH "$XDG_DATA_HOME"/caddy
 set -x CARGO_HOME "$XDG_DATA_HOME"/cargo
 set -x CUDA_CACHE_PATH "$XDG_CACHE_HOME"/nv
 set -x DOCKER_CONFIG "$XDG_CONFIG_HOME"/docker
+set -x GEM_HOME "$XDG_DATA_HOME"/gem
+set -x GEM_SPEC_CACHE "$XDG_CACHE_HOME"/
 set -x GIMP2_DIRECTORY "$XDG_CONFIG_HOME"/gimp
 set -x GNUPGHOME "$XDG_DATA_HOME"/gnupg
 set -x GRADLE_USER_HOME "$XDG_DATA_HOME"/gradle
@@ -48,6 +53,8 @@ set -x UNISON "$XDG_DATA_HOME"/unison
 set -x WEECHAT_HOME "$XDG_CONFIG_HOME"/weechat
 set -x WGETRC "$XDG_CONFIG_HOME"/wget/config
 set -x WINEPREFIX "$XDG_DATA_HOME"/wine
+set -x VIMINIT 'if !has(\'nvim\') | source "$XDG_CONFIG_HOME/vim/vimrc" | endif'
+set -x VSCODE_EXTENSIONS "$XDG_DATA_HOME"/vscode/extensions
 set -x __GL_SHADER_DISK_CACHE_PATH "$XDG_CACHE_HOME"/nv
 
 # Other
