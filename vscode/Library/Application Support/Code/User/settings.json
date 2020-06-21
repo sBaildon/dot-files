@@ -12,6 +12,8 @@
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "go.useLanguageServer": true,
+    "ruby.useLanguageServer": true,
+    "ruby.format": "rubocop",
     "telemetry.enableTelemetry": false,
     "window.autoDetectColorScheme": true,
     "window.nativeTabs": true,
