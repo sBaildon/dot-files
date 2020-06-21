@@ -16,15 +16,12 @@
     "window.autoDetectColorScheme": true,
     "window.nativeTabs": true,
     "workbench.colorTheme": "GitHub Light",
-    "workbench.preferredDarkColorTheme": "Github Dark",
-    "workbench.preferredLightColorTheme": "Github Light",
+    "workbench.preferredDarkColorTheme": "GitHub Dark",
+    "workbench.preferredLightColorTheme": "GitHub Light",
     "workbench.tree.indent": 24,
     "workbench.startupEditor": "newUntitledFile",
     "files.associations": {
         "*.tfvars": "terraform"
     },
-    "launch": {
-
-
-    },
+    "window.zoomLevel": 0,
 }
