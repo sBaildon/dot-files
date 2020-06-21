@@ -20,8 +20,8 @@
     "workbench.colorTheme": "GitHub Light",
     "workbench.preferredDarkColorTheme": "GitHub Dark",
     "workbench.preferredLightColorTheme": "GitHub Light",
-    "workbench.tree.indent": 24,
     "workbench.startupEditor": "newUntitledFile",
+    "workbench.tree.indent": 24,
     "files.associations": {
         "*.tfvars": "terraform"
     },
