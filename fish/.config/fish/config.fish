@@ -53,7 +53,6 @@ set -x UNISON "$XDG_DATA_HOME"/unison
 set -x WEECHAT_HOME "$XDG_CONFIG_HOME"/weechat
 set -x WGETRC "$XDG_CONFIG_HOME"/wget/config
 set -x WINEPREFIX "$XDG_DATA_HOME"/wine
-set -x VIMINIT 'if !has(\'nvim\') | source "$XDG_CONFIG_HOME/vim/vimrc" | endif'
 set -x VSCODE_EXTENSIONS "$XDG_DATA_HOME"/vscode/extensions
 set -x __GL_SHADER_DISK_CACHE_PATH "$XDG_CACHE_HOME"/nv
 
