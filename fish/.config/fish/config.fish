@@ -46,6 +46,7 @@ set -x RBENV_ROOT "$XDG_DATA_HOME"/rbenv
 set -x RIPGREP_CONFIG_PATH "$XDG_CONFIG_HOME"/rg/.ripgreprc
 set -x RUSTUP_HOME "$XDG_DATA_HOME"/rustup
 set -x SCREENRC "$XDG_CONFIG_HOME"/screen/screenrc
+set -x STEPPATH "$XDG_DATA_HOME"/step
 set -x TERMINFO "$XDG_DATA_HOME"/terminfo
 set -x TIGRC_USER "$XDG_CONFIG_HOME"/tig/tigrc
 set -x TMUX_PLUGIN_MANAGER_PATH "$XDG_DATA_HOME"/tmux/plugins
