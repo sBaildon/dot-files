@@ -37,4 +37,7 @@
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
+    "Lua.diagnostics.disable": [
+        "undefined-global"
+    ],
 }
