@@ -34,4 +34,7 @@
             "resource-limits"
         ]
     },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
 }
