@@ -13,6 +13,7 @@
 	cob = checkout -b
 	cm = !git add -A && git commit -m
 	ss = status --short
+	sp = "!git status --porcelain | awk -F ' ' '{print $2}'"
 	bl = branch --list
 	pg = "!git log --decorate --graph --oneline --all -n $(expr $(tput lines) / 2)"
 	pgl = "!git log --decorate --graph --oneline --all"
