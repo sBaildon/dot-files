@@ -20,8 +20,8 @@
 	fap = fetch --all --prune
 	lv = tag -l --sort version:refname
 	sl = "status --short"
-	af = "!git add $(git status --porcelain | awk -F ' ' '{print $2}' | fzf)"
-	rf = "!git rm $(git status --porcelain | awk -F ' ' '{print $2}' | fzf)"
+	af = "!git add $(git status --porcelain | cut -c 4- | fzf)"
+	rf = "!git rm $(git status --porcelain | cut -c 4-| fzf)"
 	unstage = 'reset HEAD --'
 [credential]
 	helper = manager
