@@ -1,4 +1,5 @@
 {
+    "editor.detectIndentation": true,
     "editor.fontFamily": "SF Mono, Operator Mono, Menlo, monospace",
     "editor.fontLigatures": true,
     "editor.fontSize": 11,
