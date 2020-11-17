@@ -25,3 +25,5 @@
 	unstage = 'reset HEAD --'
 [credential]
 	helper = manager
+[advice]
+	addEmptyPathspec = false
