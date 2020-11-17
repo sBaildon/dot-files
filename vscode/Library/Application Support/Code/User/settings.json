@@ -40,4 +40,5 @@
     "Lua.diagnostics.disable": [
         "undefined-global"
     ],
+    "editor.formatOnSave": true,
 }
