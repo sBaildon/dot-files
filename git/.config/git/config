@@ -29,3 +29,5 @@
 	addEmptyPathspec = false
 [init]
 	defaultBranch = main
+[diff "sops"]
+        textconv = "sops --decrypt"
