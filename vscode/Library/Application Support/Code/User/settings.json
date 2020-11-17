@@ -29,4 +29,9 @@
     "workbench.preferredLightColorTheme": "GitHub Light",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 16,
+    "vs-kubernetes": {
+        "disable-linters": [
+            "resource-limits"
+        ]
+    },
 }
