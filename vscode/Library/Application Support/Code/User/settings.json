@@ -41,4 +41,5 @@
         "undefined-global"
     ],
     "editor.formatOnSave": true,
+    "elixirLS.suggestSpecs": false,
 }
