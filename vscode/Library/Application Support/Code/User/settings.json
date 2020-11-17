@@ -28,5 +28,5 @@
     "workbench.preferredDarkColorTheme": "GitHub Dark",
     "workbench.preferredLightColorTheme": "GitHub Light",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.tree.indent": 24,
+    "workbench.tree.indent": 16,
 }
