@@ -23,7 +23,5 @@
 	af = "!git add $(git status --porcelain | awk -F ' ' '{print $2}' | fzf)"
 	rf = "!git rm $(git status --porcelain | awk -F ' ' '{print $2}' | fzf)"
 	unstage = 'reset HEAD --'
-[url "git@github.com:"]
-	insteadOf = https://github.com/
 [credential]
 	helper = manager
