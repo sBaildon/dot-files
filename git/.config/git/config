@@ -1,6 +1,7 @@
 [user]
 	email = sean@baildon.co
 	name = Sean Baildon
+	signingkey = 5C37B87C4F98A9EE9A0E57D74B9B0D0DA1E689D9
 [core]
 	excludesfile = ~/.config/git/ignore
 	editor = nvim
