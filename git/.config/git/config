@@ -31,3 +31,5 @@
 	defaultBranch = main
 [diff "sops"]
         textconv = "sops --decrypt"
+[pull]
+	rebase = true
