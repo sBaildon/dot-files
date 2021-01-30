@@ -1,2 +1,10 @@
-set fish_color_command purple
-set fish_color_param cyan
+set -U fish_color_command magenta
+set -U fish_color_comment yellow
+set -U fish_color_quote green
+set -U fish_color_redirection cyan
+set -U fish_color_end magenta
+set -U fish_color_error red
+set -U fish_color_param blue
+set -U fish_color_autosuggestion brblack
+set -U fish_color_user brgreen
+set -U fish_color_host normal
