@@ -23,6 +23,7 @@
     pkgs.stow
     pkgs.pinentry_mac
     pkgs.tree
+    pkgs.ripgrep
   ];
 
   # This value determines the Home Manager release that your
