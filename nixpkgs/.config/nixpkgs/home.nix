@@ -22,6 +22,7 @@
     pkgs.fzf
     pkgs.stow
     pkgs.pinentry_mac
+    pkgs.tree
   ];
 
   # This value determines the Home Manager release that your
