@@ -20,6 +20,7 @@ set -x GEM_HOME "$XDG_DATA_HOME"/gem
 set -x GEM_SPEC_CACHE "$XDG_CACHE_HOME"/
 set -x GIMP2_DIRECTORY "$XDG_CONFIG_HOME"/gimp
 set -x GNUPGHOME "$XDG_DATA_HOME"/gnupg
+set -x GOPATH "$XDG_DATA_HOME"/go
 set -x GRADLE_USER_HOME "$XDG_DATA_HOME"/gradle
 set -x GTK2_RC_FILES "$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
 set -x GTK_RC_FILES "$XDG_CONFIG_HOME"/gtk-1.0/gtkrc
