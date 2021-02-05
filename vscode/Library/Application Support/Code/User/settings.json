@@ -1,15 +1,20 @@
 {
+    "css.validate": false,
+    "scss.validate": false,
     "editor.detectIndentation": true,
     "editor.fontFamily": "SF Mono, Operator Mono, Menlo, monospace",
     "editor.fontLigatures": true,
     "editor.fontSize": 11,
     "editor.fontWeight": "500",
+    "editor.formatOnSave": true,
     "editor.insertSpaces": false,
     "editor.minimap.enabled": false,
     "editor.renderFinalNewline": false,
     "editor.tabSize": 8,
+    "elixirLS.suggestSpecs": false,
     "emmet.includeLanguages": {
-        "html-eex": "html"
+        "html-eex": "html",
+        "markdown": "md",
     },
     "files.associations": {
         "*.tfvars": "terraform"
@@ -20,11 +25,16 @@
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "go.useLanguageServer": true,
+    "Lua.diagnostics.disable": [
+        "undefined-global"
+    ],
+    "tailwindCSS.validate": true,
+    "tailwindCSS.emmetCompletions": true,
     "telemetry.enableTelemetry": false,
     "window.autoDetectColorScheme": true,
     "window.nativeTabs": true,
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "GitHub Light",
+    "workbench.colorTheme": "GitHub Dark",
     "workbench.preferredDarkColorTheme": "GitHub Dark",
     "workbench.preferredLightColorTheme": "GitHub Light",
     "workbench.startupEditor": "newUntitledFile",
@@ -37,9 +47,4 @@
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "Lua.diagnostics.disable": [
-        "undefined-global"
-    ],
-    "editor.formatOnSave": true,
-    "elixirLS.suggestSpecs": false,
 }
