@@ -23,7 +23,6 @@
     pkgs.python3
     pkgs.ripgrep
     pkgs.sops
-    pkgs.step
     pkgs.step-cli
     pkgs.stow
     pkgs.tree
