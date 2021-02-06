@@ -10,20 +10,20 @@
   home.homeDirectory = "/Users/sbaildon";
 
   home.packages = [
-    pkgs.git
-    pkgs.htop
-    pkgs.neovim
-    pkgs.jq
-    pkgs.python3
-    pkgs.step-cli
     pkgs.fish
     pkgs.fortune
-    pkgs.gnupg
     pkgs.fzf
-    pkgs.stow
+    pkgs.git
+    pkgs.gnupg
+    pkgs.htop
+    pkgs.jq
+    pkgs.neovim
     pkgs.pinentry_mac
-    pkgs.tree
+    pkgs.python3
     pkgs.ripgrep
+    pkgs.step-cli
+    pkgs.stow
+    pkgs.tree
   ];
 
   # This value determines the Home Manager release that your
