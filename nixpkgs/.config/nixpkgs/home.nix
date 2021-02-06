@@ -17,13 +17,17 @@
     pkgs.gnupg
     pkgs.htop
     pkgs.jq
+    pkgs.lazygit
     pkgs.neovim
     pkgs.pinentry_mac
     pkgs.python3
     pkgs.ripgrep
+    pkgs.sops
+    pkgs.step
     pkgs.step-cli
     pkgs.stow
     pkgs.tree
+    pkgs.vault
   ];
 
   # This value determines the Home Manager release that your
