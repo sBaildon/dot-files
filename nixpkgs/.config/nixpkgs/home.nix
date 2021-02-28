@@ -14,6 +14,7 @@
     pkgs.fortune
     pkgs.fzf
     pkgs.git
+    pkgs.gnumake
     pkgs.gnupg
     pkgs.htop
     pkgs.jq
