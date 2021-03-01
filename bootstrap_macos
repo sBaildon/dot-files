@@ -45,10 +45,6 @@ home-manager switch
 grep -qxF $(command -v fish) /etc/shells || (command -v fish | sudo -n tee -a /etc/shells)
 sudo -n chsh -s "$(command -v fish)" "$(whoami)"
 
-#pushd $(mktemp -d)
-#mkdir -p macOS; curl -sL https://github.com/sbaildon/macOS/archive/master.tar.gz | tar xz -C macOS --strip-components 1
-#pushd macOS
-
 #vim --not-a-term +PlugUpgrade +PlugInstall +qall
 
 cp /System/Applications/Utilities/Terminal.app/Contents/Resources/Fonts/SF-*.otf ~/Library/Fonts
