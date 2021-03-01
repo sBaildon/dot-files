@@ -21,7 +21,6 @@
     pkgs.lazygit
     pkgs.neovim
     pkgs.pinentry_mac
-    pkgs.python3
     pkgs.rclone
     pkgs.restic
     pkgs.ripgrep
