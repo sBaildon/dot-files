@@ -56,5 +56,3 @@ set -x WGETRC "$XDG_CONFIG_HOME"/wget/config
 set -x WINEPREFIX "$XDG_DATA_HOME"/wine
 set -x VSCODE_EXTENSIONS "$XDG_DATA_HOME"/vscode/extensions
 set -x __GL_SHADER_DISK_CACHE_PATH "$XDG_CACHE_HOME"/nv
-
-#set -x TERMINFO "$XDG_DATA_HOME"/terminfo
