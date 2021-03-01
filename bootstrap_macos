@@ -35,7 +35,7 @@ sh <(curl -L https://nixos.org/nix/install) --no-daemon
 
 mkdir -p ~/sources/sbaildon
 nix run nixpkgs.git -c git clone --origin upstream https://github.com/sbaildon/dotfiles.git ~/sources/sbaildon/dotfiles
-nix run nixpkgs.stow -c stow git nixpkgs kitty fish gnupg rg npm vim nvim
+nix run nixpkgs.stow -c stow git nixpkgs kitty fish gnupg rg npm vim nvim rclone
 
 nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
 nix-channel --update
