@@ -26,6 +26,7 @@
     pkgs.ripgrep
     pkgs.sops
     pkgs.step-cli
+    pkgs.step-ca
     pkgs.stow
     pkgs.tree
   ];
