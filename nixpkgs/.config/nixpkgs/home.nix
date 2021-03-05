@@ -29,6 +29,7 @@
     pkgs.step-ca
     pkgs.stow
     pkgs.tree
+    pkgs.python37
   ];
 
   # This value determines the Home Manager release that your
