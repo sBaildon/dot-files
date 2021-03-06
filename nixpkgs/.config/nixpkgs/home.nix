@@ -10,6 +10,7 @@
   home.homeDirectory = "/Users/sbaildon";
 
   home.packages = [
+    pkgs.dnsmasq
     pkgs.fish
     pkgs.fortune
     pkgs.fzf
