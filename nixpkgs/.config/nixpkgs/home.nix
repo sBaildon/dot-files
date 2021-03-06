@@ -21,15 +21,15 @@
     pkgs.lazygit
     pkgs.neovim
     pkgs.pinentry_mac
+    pkgs.python37
     pkgs.rclone
     pkgs.restic
     pkgs.ripgrep
     pkgs.sops
-    pkgs.step-cli
     pkgs.step-ca
+    pkgs.step-cli
     pkgs.stow
     pkgs.tree
-    pkgs.python37
   ];
 
   # This value determines the Home Manager release that your
