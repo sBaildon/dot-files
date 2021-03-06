@@ -14,6 +14,7 @@
     pkgs.fish
     pkgs.fortune
     pkgs.fzf
+    pkgs.fd
     pkgs.git
     pkgs.gnumake
     pkgs.gnupg
