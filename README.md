@@ -11,3 +11,11 @@ Configuration sets are best installed with symlinks using `stow`. Pick and choos
 ## Uninstallation
 
 `stow --delete ~/.config/git ...`
+
+## Starting services
+
+### Yabai
+
+```
+launchctl bootout gui/(id -u) ~/Library/LaunchAgents/yabai.plist
+```
