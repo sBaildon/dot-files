@@ -23,7 +23,7 @@
 	<string>Interactive</string>
 
 	<key>StandardOutPath</key>
-	<string>/tmp//log/yabai/stdout.log</string>
+	<string>/tmp/log/yabai/stdout.log</string>
 
 	<key>StandardErrorPath</key>
 	<string>/tmp/log/yabai/stderr.log</string>
