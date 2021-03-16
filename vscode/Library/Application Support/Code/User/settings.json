@@ -19,6 +19,7 @@
     "files.associations": {
         "*.tfvars": "terraform"
     },
+    "vscode-neovim.neovimExecutablePaths.darwin": "/Users/sbaildon/.nix-profile/bin/nvim",
     "files.autoSave": "onFocusChange",
     "files.autoSaveDelay": 0,
     "files.insertFinalNewline": true,
