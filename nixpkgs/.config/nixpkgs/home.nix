@@ -16,6 +16,7 @@
 
   home.packages = [
     pkgs.dnsmasq
+    pkgs.elixir_1_11
     pkgs.fish
     pkgs.fortune
     pkgs.fzf
