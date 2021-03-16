@@ -1,6 +1,11 @@
 { config, pkgs, ... }:
 
 {
+  nixpkgs.overlays = [
+    (import (builtins.fetchTarball {
+      url = https://github.com/nix-community/neovim-nightly-overlay/archive/master.tar.gz;
+    }))
+  ];
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
@@ -21,7 +26,7 @@
     pkgs.htop
     pkgs.jq
     pkgs.lazygit
-    pkgs.neovim
+    pkgs.neovim-nightly
     pkgs.pinentry_mac
     pkgs.python37
     pkgs.rclone
