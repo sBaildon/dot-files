@@ -30,6 +30,7 @@
     ],
     "tailwindCSS.validate": true,
     "tailwindCSS.emmetCompletions": true,
+    "tailwindCSS.showPixelEquivalents": true,
     "telemetry.enableTelemetry": false,
     "window.autoDetectColorScheme": true,
     "window.nativeTabs": true,
