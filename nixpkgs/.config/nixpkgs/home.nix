@@ -15,6 +15,7 @@
   home.homeDirectory = "/Users/sbaildon";
 
   home.packages = [
+    pkgs.caddy
     pkgs.dnsmasq
     pkgs.elixir_1_11
     pkgs.fish
