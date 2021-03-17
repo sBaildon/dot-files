@@ -39,6 +39,7 @@
     pkgs.step-ca
     pkgs.step-cli
     pkgs.stow
+    pkgs.terraform_0_14
     pkgs.tree
     pkgs.yabai
   ];
