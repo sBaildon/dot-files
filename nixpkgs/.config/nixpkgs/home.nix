@@ -34,13 +34,13 @@
     pkgs.rclone
     pkgs.restic
     pkgs.ripgrep
+    pkgs.skhd
     pkgs.sops
     pkgs.step-ca
     pkgs.step-cli
     pkgs.stow
     pkgs.tree
     pkgs.yabai
-    pkgs.skhd
   ];
 
   # This value determines the Home Manager release that your
