@@ -38,6 +38,7 @@
     pkgs.sops
     pkgs.step-ca
     pkgs.step-cli
+    pkgs.stripe-cli
     pkgs.stow
     pkgs.terraform_0_14
     pkgs.tree
