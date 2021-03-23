@@ -32,6 +32,7 @@ set -x INFINIT_DATA_HOME "$XDG_DATA_HOME"/infinit/filesystem
 set -x LESSHISTFILE "$XDG_DATA_HOME"/less/history
 set -x LESSKEY "$XDG_CONFIG_HOME"/less/key
 set -x MINIKUBE_HOME "$XDG_CONFIG_HOME"/minikube
+set -x MIX_ARCHIVES "$XDG_DATA_HOME"/mix
 set -x N_PREFIX "$XDG_DATA_HOME"
 set -x NPM_CONFIG_USERCONFIG "$XDG_CONFIG_HOME"/npm/config
 set -x NPM_CONFIG_DEVDIR "$XDG_CACHE_HOME"/npm/node-gyp
