@@ -44,9 +44,9 @@
     pkgs.stripe-cli
     pkgs.terraform_0_14
     pkgs.tree
+    pkgs.watch
     pkgs.yabai
     pkgs.yq-go
-    pkgs.watch
   ];
 
   # This value determines the Home Manager release that your
