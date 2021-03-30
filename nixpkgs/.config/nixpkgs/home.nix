@@ -16,6 +16,7 @@
 
   home.packages = [
     pkgs.caddy
+    pkgs.coreutils-prefixed
     pkgs.dnsmasq
     pkgs.elixir_1_11
     pkgs.fish
