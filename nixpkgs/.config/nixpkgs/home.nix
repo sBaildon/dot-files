@@ -31,6 +31,7 @@
     pkgs.lazygit
     pkgs.neovim-nightly
     pkgs.pinentry_mac
+    pkgs.postgresql
     pkgs.python37
     pkgs.rclone
     pkgs.restic
