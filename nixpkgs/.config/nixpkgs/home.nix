@@ -40,8 +40,8 @@
     pkgs.sops
     pkgs.step-ca
     pkgs.step-cli
-    pkgs.stripe-cli
     pkgs.stow
+    pkgs.stripe-cli
     pkgs.terraform_0_14
     pkgs.tree
     pkgs.yabai
