@@ -38,6 +38,7 @@
     pkgs.restic
     pkgs.ripgrep
     pkgs.skhd
+    pkgs.nodejs-15_x
     pkgs.sops
     pkgs.step-ca
     pkgs.step-cli
