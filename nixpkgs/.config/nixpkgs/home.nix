@@ -30,6 +30,7 @@
     pkgs.jq
     pkgs.kustomize
     pkgs.lazygit
+    pkgs.libwebp
     pkgs.neovim-nightly
     pkgs.pinentry_mac
     pkgs.postgresql
