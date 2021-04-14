@@ -21,8 +21,8 @@
     pkgs.elixir_1_11
     pkgs.fish
     pkgs.fortune
-    pkgs.fzf
     pkgs.fd
+    pkgs.fzf
     pkgs.git
     pkgs.gnumake
     pkgs.gnupg
