@@ -28,6 +28,7 @@
     pkgs.gnupg
     pkgs.htop
     pkgs.jq
+    pkgs.kustomize
     pkgs.lazygit
     pkgs.neovim-nightly
     pkgs.pinentry_mac
