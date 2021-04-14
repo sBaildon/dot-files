@@ -34,7 +34,7 @@
     "tailwindCSS.showPixelEquivalents": true,
     "telemetry.enableTelemetry": false,
     "window.autoDetectColorScheme": true,
-    "window.nativeTabs": false,
+    "window.nativeTabs": true,
     "window.zoomLevel": 0,
     "workbench.colorTheme": "GitHub Light",
     "workbench.preferredDarkColorTheme": "GitHub Dark",
