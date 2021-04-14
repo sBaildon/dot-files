@@ -46,6 +46,7 @@
     pkgs.terraform_0_14
     pkgs.tree
     pkgs.watch
+    pkgs.xh
     pkgs.yabai
     pkgs.yq-go
   ];
