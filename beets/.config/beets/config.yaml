@@ -1,11 +1,14 @@
-libray: '~/Music/'
+library: '~/.local/share/beets/library.db'
+directory: '~/Music/'
 import:
-    write: yes
-    copy: yes
-    timid: yes
+  write: yes
+  copy: yes
+  timid: yes
 asciify_paths: yes
 ui:
-    color: yes
-plugins: scrub embedart duplicates
+  color: yes
+plugins: scrub embedart duplicates lyrics
 scrub:
-    auto: yes
+  auto: yes
+lyrics:
+  sources: musixmatch
