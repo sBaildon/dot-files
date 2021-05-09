@@ -1,6 +1,6 @@
-.blacklist [
-    "kitty"
-]
+#.blacklist [
+#   "kitty"
+#]
 
 # focus window
 alt - h : yabai -m window --focus west
