@@ -16,6 +16,7 @@
 
   home.packages = [
     pkgs.caddy
+    pkgs.cmus
     pkgs.coreutils-prefixed
     pkgs.dnsmasq
     pkgs.elixir_1_11
