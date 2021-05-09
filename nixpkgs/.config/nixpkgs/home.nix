@@ -28,6 +28,7 @@
     pkgs.gnumake
     pkgs.gnupg
     pkgs.htop
+    pkgs.hugo
     pkgs.jq
     pkgs.kustomize
     pkgs.lazygit
