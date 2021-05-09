@@ -39,6 +39,7 @@
     pkgs.rclone
     pkgs.restic
     pkgs.ripgrep
+    pkgs.rustup
     pkgs.skhd
     pkgs.nodejs-15_x
     pkgs.sops
