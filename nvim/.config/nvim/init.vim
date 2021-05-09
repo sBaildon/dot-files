@@ -8,9 +8,9 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'w0rp/ale'
 Plug 'vimwiki/vimwiki'
 Plug 'mattn/emmet-vim'
+Plug 'neovim/nvim-lspconfig'
 
 call plug#end()
 
