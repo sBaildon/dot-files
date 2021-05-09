@@ -29,6 +29,7 @@
     pkgs.gnupg
     pkgs.htop
     pkgs.hugo
+    pkgs.imagemagick
     pkgs.jq
     pkgs.kustomize
     pkgs.lazygit
