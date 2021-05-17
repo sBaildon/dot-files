@@ -6,11 +6,13 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vimwiki/vimwiki'
 Plug 'mattn/emmet-vim'
 Plug 'neovim/nvim-lspconfig'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 call plug#end()
 
@@ -147,8 +149,8 @@ set noswapfile
 set smarttab
 
 " 1 tab == 8 spaces
-set shiftwidth=8
-set tabstop=8
+set shiftwidth=4
+set tabstop=4
 
 set ai "Auto indent
 set si "Smart indent
