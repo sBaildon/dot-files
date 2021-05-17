@@ -15,6 +15,7 @@
   home.homeDirectory = "/Users/sbaildon";
 
   home.packages = [
+    pkgs.bat
     pkgs.caddy
     pkgs.cmus
     pkgs.coreutils-prefixed
