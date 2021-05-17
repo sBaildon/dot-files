@@ -1,3 +1,3 @@
 function rclone
-	command sops exec-file $XDG_CONFIG_HOME/rclone/rclone.conf.ini "rclone --config={} $argv"
+	command sops exec-file --no-fifo $XDG_CONFIG_HOME/rclone/rclone.conf.ini "rclone --config={} $argv"
 end
