@@ -15,6 +15,7 @@
   home.homeDirectory = "/Users/sbaildon";
 
   home.packages = [
+    pkgs.aerc
     pkgs.bat
     pkgs.caddy
     pkgs.cmus
