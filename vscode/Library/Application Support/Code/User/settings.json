@@ -35,7 +35,6 @@
     "telemetry.enableTelemetry": false,
     "window.autoDetectColorScheme": true,
     "window.nativeTabs": true,
-    "window.zoomLevel": 0,
     "workbench.colorTheme": "GitHub Light",
     "workbench.preferredDarkColorTheme": "GitHub Dark",
     "workbench.preferredLightColorTheme": "GitHub Light",
@@ -46,6 +45,7 @@
             "resource-limits"
         ]
     },
+    "vim.enableNeovim": true,
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
