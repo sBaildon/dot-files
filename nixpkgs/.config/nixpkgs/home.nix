@@ -39,6 +39,7 @@
     pkgs.lazygit
     pkgs.libwebp
     pkgs.neovim-nightly
+	pkgs.nodejs-16_x
     pkgs.pinentry_mac
     pkgs.postgresql
     pkgs.python37
@@ -47,7 +48,6 @@
     pkgs.ripgrep
     pkgs.rustup
     pkgs.skhd
-    pkgs.nodejs-15_x
     pkgs.sops
     pkgs.step-ca
     pkgs.step-cli
