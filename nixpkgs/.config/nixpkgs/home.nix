@@ -22,6 +22,7 @@
     pkgs.coreutils-prefixed
     pkgs.dnsmasq
     pkgs.elixir_1_11
+	pkgs.exa
     pkgs.fish
     pkgs.fortune
     pkgs.fd
