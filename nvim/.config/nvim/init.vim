@@ -5,8 +5,7 @@ Plug 'chriskempson/base16-vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'hoob3rt/lualine.nvim'
 Plug 'mattn/emmet-vim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -16,6 +15,17 @@ Plug 'nvim-telescope/telescope.nvim'
 
 call plug#end()
 
+lua << EOF
+require('lualine').setup{
+	options = {
+		theme = "ayu_light",
+		icons_enabled = false,
+		lower = true,
+		component_separators = {'', ''},
+		section_separators = {'', ''},
+	}
+}
+EOF
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
