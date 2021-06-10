@@ -122,9 +122,6 @@ set completeopt-=preview
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
-syntax enable
-
-colorscheme base16-tomorrow-night
 "
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
