@@ -1,7 +1,6 @@
 call plug#begin()
 
 Plug 'airblade/vim-gitgutter'
-Plug 'chriskempson/base16-vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
@@ -12,10 +11,13 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'chriskempson/base16-vim'
+Plug 'RRethy/nvim-base16'
 
 call plug#end()
 
 lua << EOF
+vim.cmd('colorscheme base16-harmonic-light')
 require('lualine').setup{
 	options = {
 		theme = "ayu_light",
