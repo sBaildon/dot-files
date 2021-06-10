@@ -18,6 +18,9 @@ call plug#end()
 
 lua << EOF
 vim.cmd('colorscheme base16-harmonic-light')
+require'lspconfig'.elixirls.setup{
+	cmd = { "/Users/sbaildon/.nix-profile/bin/elixir-ls" };
+}
 require('lualine').setup{
 	options = {
 		theme = "ayu_light",
