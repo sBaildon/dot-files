@@ -21,6 +21,7 @@ vim.cmd('colorscheme base16-harmonic-light')
 require'lspconfig'.elixirls.setup{
 	cmd = { "/Users/sbaildon/.nix-profile/bin/elixir-ls" };
 }
+require('lspconfig').gopls.setup{}
 require('lualine').setup{
 	options = {
 		theme = "ayu_light",
