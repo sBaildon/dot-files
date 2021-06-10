@@ -24,7 +24,7 @@ require'lspconfig'.elixirls.setup{
 require('lspconfig').gopls.setup{}
 require('lualine').setup{
 	options = {
-		theme = "ayu_light",
+		theme = "16color",
 		icons_enabled = false,
 		lower = true,
 		component_separators = {'', ''},
