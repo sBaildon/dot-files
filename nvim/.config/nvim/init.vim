@@ -32,6 +32,8 @@ require('lualine').setup{
 	}
 }
 EOF
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -123,12 +125,6 @@ set completeopt-=preview
 syntax enable
 
 colorscheme base16-tomorrow-night
-let g:airline_theme='base16_tomorrow'
-
-let g:airline_left_alt_sep = ' '
-let g:airline_right_alt_sep = ' '
-let g:airline_left_sep = ''
-let g:airline_right_sep = ''
 "
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
