@@ -127,6 +127,17 @@ let g:airline_left_alt_sep = ' '
 let g:airline_right_alt_sep = ' '
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
+"
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  highlight = {
+    enable = true
+  },
+  indent = {
+    enable = true
+  }
+}
+EOF
 
 " Highlight current line number
 highlight CursorLineNR ctermfg=13
