@@ -25,12 +25,12 @@ vim.cmd('colorscheme base16-harmonic-light')
 require('lspconfig').elixirls.setup{
 	cmd = { "/Users/sbaildon/.nix-profile/bin/elixir-ls" };
 }
-require('lualine').setup{
 
 require('lspconfig').gopls.setup({})
 
 require('nvim-autopairs').setup()
 
+require('lualine').setup({
 	options = {
 		theme = "16color",
 		icons_enabled = false,
@@ -38,7 +38,7 @@ require('nvim-autopairs').setup()
 		component_separators = {'', ''},
 		section_separators = {'', ''},
 	}
-}
+})
 EOF
 
 
