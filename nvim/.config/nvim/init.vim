@@ -16,6 +16,8 @@ Plug 'RRethy/nvim-base16'
 
 call plug#end()
 
+set signcolumn=yes
+
 lua << EOF
 vim.cmd('colorscheme base16-harmonic-light')
 require'lspconfig'.elixirls.setup{
