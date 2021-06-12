@@ -13,6 +13,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'chriskempson/base16-vim'
 Plug 'RRethy/nvim-base16'
+Plug 'windwp/nvim-autopairs'
 
 call plug#end()
 
@@ -27,6 +28,8 @@ require('lspconfig').elixirls.setup{
 require('lualine').setup{
 
 require('lspconfig').gopls.setup({})
+
+require('nvim-autopairs').setup()
 
 	options = {
 		theme = "16color",
