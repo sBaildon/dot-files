@@ -141,7 +141,7 @@ highlight CursorLineNR ctermfg=13
 set cursorline
 
 " Color Search
-highlight Search ctermfg=0 ctermbg=5
+highlight Search ctermfg=0 ctermbg=2
 
 " Special highlighting
 highlight htmlArg cterm=italic
