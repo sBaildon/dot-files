@@ -227,6 +227,7 @@ func! DeleteTrailingWS()
   exe "normal `z"
 endfunc
 autocmd BufWrite * :call DeleteTrailingWS()
+autocmd BufWritePre * lua vim.lsp.buf.formatting()
 
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
 
