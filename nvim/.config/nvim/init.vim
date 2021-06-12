@@ -289,9 +289,3 @@ autocmd BufWrite * :call DeleteTrailingWS()
 autocmd BufWritePre * lua vim.lsp.buf.formatting()
 
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
-
-map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
-\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
-\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
-
-let g:jsx_ext_required = 1
