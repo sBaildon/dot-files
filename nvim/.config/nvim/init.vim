@@ -16,6 +16,7 @@ Plug 'RRethy/nvim-base16'
 Plug 'hrsh7th/nvim-compe'
 Plug 'ray-x/lsp_signature.nvim'
 Plug 'windwp/nvim-autopairs'
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
 
