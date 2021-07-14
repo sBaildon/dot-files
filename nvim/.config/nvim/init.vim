@@ -1,297 +1,199 @@
-call plug#begin()
+lua require('plugins')
 
-Plug 'mhinz/vim-signify'
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-surround'
-Plug 'hoob3rt/lualine.nvim'
-Plug 'mattn/emmet-vim'
-Plug 'neovim/nvim-lspconfig'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'chriskempson/base16-vim'
-Plug 'RRethy/nvim-base16'
-Plug 'hrsh7th/nvim-compe'
-Plug 'ray-x/lsp_signature.nvim'
-Plug 'windwp/nvim-autopairs'
-Plug 'editorconfig/editorconfig-vim'
+set nocompatible
+syntax on
+filetype plugin indent on
+set encoding=utf-8
+set autoindent
 
-call plug#end()
+"hi TSAnnotation ctermfg=7 ctermbg=none cterm=none
+"hi TSAttribute ctermfg=7 ctermbg=none cterm=none
+"hi TSBoolean ctermfg=7 ctermbg=none cterm=none
+"hi TSCharacter ctermfg=7 ctermbg=none cterm=none
+"hi TSComment ctermfg=7 ctermbg=none cterm=none
+"hi TSConditional ctermfg=7 ctermbg=none cterm=none
+"hi TSConstant ctermfg=7 ctermbg=none cterm=none
+"hi TSConstBuiltin ctermfg=7 ctermbg=none cterm=none
+"hi TSConstMacro ctermfg=7 ctermbg=none cterm=none
+"hi TSConstructor ctermfg=7 ctermbg=none cterm=none
+hi TSError ctermfg=7 ctermbg=none cterm=none
+"hi TSException ctermfg=7 ctermbg=none cterm=none
+"hi TSField ctermfg=7 ctermbg=none cterm=none
+"hi TSFloat ctermfg=7 ctermbg=none cterm=none
+"hi TSFunction ctermfg=7 ctermbg=none cterm=none
+"hi TSFuncBuiltin ctermfg=7 ctermbg=none cterm=none
+"hi TSFuncMacro ctermfg=7 ctermbg=none cterm=none
+"hi TSInclude ctermfg=7 ctermbg=none cterm=none
+"hi TSKeyword ctermfg=7 ctermbg=none cterm=none
+"hi TSKeywordFunction ctermfg=7 ctermbg=none cterm=none
+"hi TSKeywordOperator ctermfg=7 ctermbg=none cterm=none
+"hi TSKeywordReturn ctermfg=7 ctermbg=none cterm=none
+"hi TSLabel ctermfg=7 ctermbg=none cterm=none
+"hi TSMethod ctermfg=7 ctermbg=none cterm=none
+"hi TSNamespace ctermfg=7 ctermbg=none cterm=none
+"hi TSNone ctermfg=7 ctermbg=none cterm=none
+"hi TSNumber ctermfg=7 ctermbg=none cterm=none
+"hi TSOperator ctermfg=7 ctermbg=none cterm=none
+"hi TSParameter ctermfg=7 ctermbg=none cterm=none
+"hi TSParameterReference ctermfg=7 ctermbg=none cterm=none
+"hi TSProperty ctermfg=7 ctermbg=none cterm=none
+"hi TSPunctDelimiter ctermfg=7 ctermbg=none cterm=none
+"hi TSPunctBracket ctermfg=7 ctermbg=none cterm=none
+"hi TSPunctSpecial ctermfg=7 ctermbg=none cterm=none
+"hi TSRepeat ctermfg=7 ctermbg=none cterm=none
+"hi TSString ctermfg=7 ctermbg=none cterm=none
+"hi TSStringRegex ctermfg=7 ctermbg=none cterm=none
+"hi TSStringEscape ctermfg=7 ctermbg=none cterm=none
+"hi TSStringSpecial ctermfg=7 ctermbg=none cterm=none
+"hi TSSymbol ctermfg=7 ctermbg=none cterm=none
+"hi TSTag ctermfg=7 ctermbg=none cterm=none
+hi TSTagAttribute ctermfg=3 ctermbg=none cterm=none
+"hi TSTagDelimiter ctermfg=7 ctermbg=none cterm=none
+"hi TSText ctermfg=7 ctermbg=none cterm=none
+"hi TSStrong ctermfg=7 ctermbg=none cterm=none
+"hi TSEmphasis ctermfg=7 ctermbg=none cterm=none
+"hi TSUnderline ctermfg=7 ctermbg=none cterm=none
+"hi TSStrike ctermfg=7 ctermbg=none cterm=none
+"hi TSLiteral ctermfg=7 ctermbg=none cterm=none
+"hi TSURI ctermfg=7 ctermbg=none cterm=none
+"hi TSMath ctermfg=7 ctermbg=none cterm=none
+"hi TSTextReference ctermfg=7 ctermbg=none cterm=none
+"hi TSEnvironment ctermfg=7 ctermbg=none cterm=none
+"hi TSEnvironmentName ctermfg=7 ctermbg=none cterm=none
+"hi TSNote ctermfg=7 ctermbg=none cterm=none
+"hi TSWarning ctermfg=7 ctermbg=none cterm=none
+"hi TSDanger ctermfg=7 ctermbg=none cterm=none
+"hi TSType ctermfg=7 ctermbg=none cterm=none
+"hi TSTypeBuiltin ctermfg=7 ctermbg=none cterm=none
+hi TSVariable ctermfg=1 ctermbg=none cterm=none
+"hi TSVariableBuiltin ctermfg=7 ctermbg=none cterm=none
 
-let g:signify_sign_add	= '▎'
-let g:signify_sign_delete	= '▎'
-let g:signify_sign_delete_first_line	= '▎'
-let g:signify_sign_change	= '▎'
-let g:signify_sign_change_delete	= '▎'
+" Vim Groups
+hi Normal ctermfg=7 ctermbg=none cterm=none
+hi DiffAdd ctermfg=2 ctermbg=none cterm=none
+hi DiffChange ctermfg=5 ctermbg=none cterm=none
+hi DiffDelete ctermfg=1 ctermbg=none cterm=none
+hi LineNr ctermfg=8 ctermbg=0 cterm=none
+hi CursorLineNr ctermfg=7 ctermbg=none cterm=none
+hi CursorLine ctermfg=none ctermbg=18 cterm=none
+hi SignColumn ctermfg=none ctermbg=0 cterm=none
+hi EndOfBuffer ctermfg=8 ctermbg=0 cterm=none
+hi Folded ctermfg=6 ctermbg=18 cterm=none
+hi Visual ctermfg=none ctermbg=18 cterm=none
+hi Search ctermfg=none ctermbg=none cterm=bold,reverse
+hi IncSearch ctermfg=none ctermbg=3 cterm=reverse
+hi NonText ctermfg=7 ctermbg=18 cterm=none
+hi VertSplit ctermfg=8 ctermbg=none cterm=none
+hi ErrorMsg ctermfg=1 ctermbg=none cterm=none
+hi WarningMsg ctermfg=3 ctermbg=none cterm=none
+hi MsgArea ctermfg=7 ctermbg=none cterm=none
 
-set signcolumn=yes
+" Treesitter links
+hi Number ctermfg=16 ctermbg=none cterm=none
+hi link Float Number
+hi Boolean ctermfg=6 ctermbg=none cterm=none
+hi Delimiter ctermfg=7 ctermbg=none cterm=none
+hi Include ctermfg=17 ctermbg=none cterm=none
+hi String ctermfg=2 ctermbg=none cterm=none
+hi SpecialChar ctermfg=16 ctermbg=none cterm=none
+hi Identifier ctermfg=6 ctermbg=none cterm=none
+hi default link Character Identifier
+hi Comment ctermfg=8 ctermbg=none cterm=italic
+hi Function ctermfg=4 ctermbg=none cterm=none
+hi Keyword ctermfg=5 ctermbg=none cterm=none
+hi Operator ctermfg=7 ctermbg=none cterm=none
+hi Label ctermfg=6  ctermbg=none cterm=none
+hi Conditional ctermfg=5 ctermbg=none cterm=none
+hi Type ctermfg=3 ctermbg=none cterm=none
+hi Underlined ctermfg=none ctermbg=none cterm=underline
+hi PreProc ctermfg=17 ctermbg=none cterm=none
+hi Macro ctermfg=7  ctermbg=none cterm=none
+hi Constant ctermfg=6 ctermbg=none cterm=none
+hi Special ctermfg=16 ctermbg=none cterm=none
+hi Todo ctermfg=0 ctermbg=3 cterm=bold
+hi Error ctermfg=0 ctermbg=1 cterm=none
+hi Repeat ctermfg=3 ctermbg=none cterm=none
+hi Define ctermfg=none ctermbg=1 cterm=none
+hi Exception ctermfg=1 ctermbg=none cterm=none
 
-lua << EOF
-vim.cmd('colorscheme base16-harmonic-light')
+hi LspReferenceText ctermfg=6 ctermbg=none cterm=none
+hi LspReferenceRead ctermfg=3 ctermbg=none cterm=none
+hi LspReferenceWrite ctermfg=1 ctermbg=none cterm=none
 
-local on_attach = function(client, bufnr)
-  local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
-  local opts = { noremap=true, silent=true }
-  buf_set_keymap('n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opts)
-  buf_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
-  buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
-  buf_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
-  buf_set_keymap('n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>', opts)
-  buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
-end
+hi LspDiagnosticsDefaultError ctermfg=1 ctermbg=none cterm=none
+hi LspDiagnosticsDefaultWarning ctermfg=3 ctermbg=none cterm=none
+hi LspDiagnosticsDefaultInformation ctermfg=6 ctermbg=none cterm=none
+hi LspDiagnosticsDefaultHint ctermfg=5 ctermbg=none cterm=none
 
-require'lspconfig'.elixirls.setup{
-  cmd = { vim.loop.os_homedir().."/.nix-profile/bin/elixir-ls" };
-  on_attach = on_attach
-}
+hi Pmenu ctermfg=7 ctermbg=18  cterm=none
+hi PmenuSel ctermfg=0 ctermbg=3 cterm=none
+hi PmenuSbar ctermfg=none ctermbg=18 cterm=none
+hi PmenuThumb ctermfg=none ctermbg=7 cterm=none
 
-require('lspconfig').gopls.setup({})
+hi link CompeDocumentation NormalFloat
+hi CompeDocumentationBorder ctermfg=3 ctermbg=1 cterm=none
+hi FloatBorder ctermbg=1 ctermfg=3
+hi FloatShadow ctermbg=1 ctermfg=3
 
-require('lspconfig').elmls.setup({})
-
-require('nvim-autopairs').setup()
-
-require('lualine').setup({
-	options = {
-		theme = "16color",
-		icons_enabled = false,
-		lower = true,
-		component_separators = {'', ''},
-		section_separators = {'', ''},
-	}
-})
-
-local nvim_lsp = require('lspconfig')
-local servers = { "gopls", "elmls" }
-for _, lsp in ipairs(servers) do
-  nvim_lsp[lsp].setup({ on_attach = on_attach })
-end
-
-require('compe').setup({
-  enabled = true;
-  autocomplete = true;
-  debug = false;
-  min_length = 1;
-  preselect = 'enable';
-  throttle_time = 80;
-  source_timeout = 200;
-  incomplete_delay = 400;
-  max_abbr_width = 100;
-  max_kind_width = 100;
-  max_menu_width = 100;
-  documentation = true;
-
-  source = {
-    path = true;
-    buffer = true;
-    calc = true;
-    nvim_lsp = true;
-    nvim_lua = true;
-	nvim_treesitter	= true;
-  };
-})
-
-require('lsp_signature').on_attach({
-	bind = true,
-	handler_opts = {
-		border = "none"   -- double, single, shadow, none
-	}
-})
-EOF
+"autocmd CursorHold * lua vim.lsp.buf.document_highlight()
+"autocmd CursorHold * lua vim.lsp.diagnostic.show_line_diagnostics()
+"autocmd CursorHoldI <buffer> lua vim.lsp.buf.document_highlight()
+"autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
 
 
-set completeopt=menu,menuone,noselect
+" don't wrap lines
+set nowrap
 
+set completeopt=menuone
 inoremap <silent><expr> <C-Space> compe#complete()
-inoremap <silent><expr> <CR>      compe#confirm('<CR>')
+"inoremap <silent><expr> <CR>      compe#confirm('<CR>')
 inoremap <silent><expr> <C-e>     compe#close('<C-e>')
 
+nnoremap <silent> <leader>uc :TSHighlightCapturesUnderCursor<cr>
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Plugins
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" NERDTree
-let g:NERDTreeBookmarksFile = $XDG_DATA_HOME.'/nvim/NERDTreeBookmarks'
+" keep 7 lines around the cursor on the screen
+set scrolloff=7
 
-" vimwiki
-let g:vimwiki_list = [{'path': '$HOME/Projects/wiki'}]
-
-" Telescope
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => General
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Sets how many lines of history VIM has to remember
-set history=700
-
-set mouse=
-
-" Enable filetype plugins
-filetype plugin indent on
-
-" Set to auto read when a file is changed from the outside
-set autoread
-
-" Improved path autocompletion
-set wildmode=longest,list,full
-set wildmenu
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => VIM user interface
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set 7 lines to the cursor - when moving vertically using j/k
-set so=7
-
-" Turn on line numbers
-set number
-
-"Always show current position
-set ruler
-
-" Configure backspace so it acts as it should act
-set backspace=eol,start,indent
-set whichwrap+=<,>,h,
-
-" Ignore case when searching
-set ignorecase
-
-" When searching try to be smart about cases
-set smartcase
-
-" Highlight search results
-set hlsearch
-
-" Makes search act like search in modern browsers
-set incsearch
-
-" Show matching brackets when text indicator is over them
-set showmatch
-
-" How many tenths of a second to blink when matching brackets
-set mat=2
-
-" No annoying sound on errors
-set noerrorbells
-set novisualbell
-set t_vb=
-set tm=500
-
-" Disable preview window
-set completeopt-=preview
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Colors and Fonts
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Enable syntax highlighting
-"
-lua <<EOF
-require'nvim-treesitter.configs'.setup {
-  highlight = {
-    enable = true
-  },
-  indent = {
-    enable = true
-  }
-}
-EOF
-
-" Highlight current line number
-highlight CursorLineNR ctermfg=13
-set cursorline
-
-" Color Search
-highlight Search ctermfg=0 ctermbg=2
-
-" Special highlighting
-highlight htmlArg cterm=italic
-highlight Comment cterm=italic
-
-" Set utf8 as standard encoding
-set encoding=utf8
-
-" Use Unix as the standard file type
-set ffs=unix,dos,mac
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Files, backups and undo
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Turn backup off, since most stuff is in SVN, git etc. anyway...
-set nobackup
-set nowb
-set noswapfile
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Text, tab and indent related
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Be smart when using tabs ;)
-set smarttab
-
-" 1 tab == 4 spaces
-set shiftwidth=4
-set tabstop=4
-
-set ai "Auto indent
-set si "Smart indent
-set nowrap "Don't wrap lines
-
-""""""""""""""""""""""""""""""
-" => Visual mode related
-""""""""""""""""""""""""""""""
-" Visual mode pressing * or # searches for the current selection
-" Super useful! From an idea by Michael Naumann
-vnoremap <silent> * :call VisualSelection('f')<CR>
-vnoremap <silent> # :call VisualSelection('b')<CR>
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Moving around, tabs, windows and buffers
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Disable highlight when <leader><cr> is pressed
+" clear search highlight
 map <silent> <leader><cr> :noh<cr>
 
-" Open NERDTree
-map <C-n> :NERDTreeToggle<CR>
+" show matching braces
+set showmatch
 
-" Enable esc in term mode
-tnoremap <Esc> <C-\><C-n>
+" linenumbers
+set number
 
-" Vim Split Navigation
-tnoremap <C-h> <C-\><C-N><C-w>h
-tnoremap <C-j> <C-\><C-N><C-w>j
-tnoremap <C-k> <C-\><C-N><C-w>k
-tnoremap <C-l> <C-\><C-N><C-w>l
+" cursor x,y position in corner
+set ruler
+
+" disable mouse
+set mouse=
+
+" signcolumn always showing, and make it blend
+set signcolumn=auto:1-3
+"highlight SignColumn ctermbg=black
+
+" highlight current line, and alt colour for
+" line number
+set cursorline
+
+" search in realtime, highlight all matches,
+" and be smart about capitalisation
+set incsearch hlsearch ignorecase smartcase
+
+" jump to last edit position, and use zz
+" to place cursor center of screen
+autocmd BufRead * silent! normal! g`"zz
+
+" quick swap buffers
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-
-" Opens a new tab with the current buffer's path
-" Super useful when editing files in the same directory
-map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
-
-" Return to last edit position when opening files (You want this!)
-autocmd BufReadPost *
-     \ if line("'\"") > 0 && line("'\"") <= line("$") |
-     \   exe "normal! g`\"" |
-     \ endif
-" Remember info about open buffers on close
-set viminfo^=%
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Editing mappings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Delete trailing white space on save
 func! DeleteTrailingWS()
-  exe "normal mz"
-  %s/\s\+$//ge
-  exe "normal `z"
+	exe "normal mz"
+	%s/\s\+$//ge
+	exe "normal `z"
 endfunc
-autocmd BufWrite * :call DeleteTrailingWS()
-autocmd BufWritePre * lua vim.lsp.buf.formatting()
 
-nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
+autocmd BufWritePre * :call DeleteTrailingWS()
