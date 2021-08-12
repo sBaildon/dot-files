@@ -69,13 +69,14 @@ hi TSVariable ctermfg=1 ctermbg=none cterm=none
 "hi TSVariableBuiltin ctermfg=7 ctermbg=none cterm=none
 
 " Vim Groups
-hi Normal ctermfg=7 ctermbg=none cterm=none
+hi Normal ctermfg=7 ctermbg=none cterm=none guibg=none
 hi DiffAdd ctermfg=2 ctermbg=none cterm=none
 hi DiffChange ctermfg=5 ctermbg=none cterm=none
 hi DiffDelete ctermfg=1 ctermbg=none cterm=none
 hi LineNr ctermfg=8 ctermbg=0 cterm=none
-hi CursorLineNr ctermfg=7 ctermbg=none cterm=none
+hi CursorLineNr ctermfg=7 ctermbg=none cterm=none guibg=none
 hi CursorLine ctermfg=none ctermbg=18 cterm=none
+hi CursorWord cterm=underline
 hi SignColumn ctermfg=none ctermbg=0 cterm=none
 hi EndOfBuffer ctermfg=8 ctermbg=0 cterm=none
 hi Folded ctermfg=6 ctermbg=18 cterm=none
@@ -131,15 +132,38 @@ hi PmenuSbar ctermfg=none ctermbg=18 cterm=none
 hi PmenuThumb ctermfg=none ctermbg=7 cterm=none
 
 hi link CompeDocumentation NormalFloat
-hi CompeDocumentationBorder ctermfg=3 ctermbg=1 cterm=none
-hi FloatBorder ctermbg=1 ctermfg=3
-hi FloatShadow ctermbg=1 ctermfg=3
+hi CompeDocumentationBorder ctermfg=3 ctermbg=0 cterm=none
+hi NormalFloat ctermbg=0 ctermfg=7
+hi FloatBorder ctermbg=0 ctermfg=7
+hi FloatShadow ctermbg=0 ctermfg=3
 
-"autocmd CursorHold * lua vim.lsp.buf.document_highlight()
-"autocmd CursorHold * lua vim.lsp.diagnostic.show_line_diagnostics()
-"autocmd CursorHoldI <buffer> lua vim.lsp.buf.document_highlight()
-"autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
+nnoremap <silent> <leader>gr <cmd>lua vim.lsp.buf.rename()<CR>
+noremap <silent> <C-u> <cmd>lua vim.lsp.diagnostic.show_line_diagnostics({ show_header = false, border = "single" })<CR>
 
+nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
+nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
+nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
+nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+nnoremap <C-i> i<Space><Esc>r
+
+
+lua << EOF
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+vim.lsp.diagnostic.on_publish_diagnostics, {
+	underline = true,
+	virtual_text = false
+	}
+)
+
+local signs = { Error = "!!", Warning = "!", Hint = "▪", Information = "▪" }
+
+for type, icon in pairs(signs) do
+	local hl = "LspDiagnosticsSign" .. type
+	vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
+end
+EOF
+
+nnoremap <C-n> :NvimTreeToggle<CR>
 
 " don't wrap lines
 set nowrap
@@ -170,8 +194,7 @@ set ruler
 set mouse=
 
 " signcolumn always showing, and make it blend
-set signcolumn=auto:1-3
-"highlight SignColumn ctermbg=black
+set signcolumn=yes:1
 
 " highlight current line, and alt colour for
 " line number
