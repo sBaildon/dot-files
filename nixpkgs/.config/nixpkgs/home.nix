@@ -51,7 +51,7 @@
     pkgs.stripe-cli
     pkgs.terraform_0_15
     pkgs.tree
-	pkgs.tree-sitter
+    pkgs.tree-sitter
     pkgs.watch
     pkgs.xh
     pkgs.yabai
