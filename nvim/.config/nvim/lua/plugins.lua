@@ -1,4 +1,3 @@
-return require('packer').startup(function()
 return require('packer').startup({ function()
 	use 'wbthomason/packer.nvim'
 
@@ -73,7 +72,6 @@ return require('packer').startup({ function()
 	use 'gelguy/wilder.nvim'
 
 	-- use 'kyazdani42/nvim-tree.lua'
-end)
 end, config = {
 		display = {
 			prompt_border = "single"
