@@ -26,8 +26,6 @@ return require('packer').startup({ function()
 		config = [[require('config.nvim-autopairs')]]
 	}
 
-	-- use 'rstacruz/vim-closer'
-
 	use {
 		'neovim/nvim-lspconfig',
 		config = [[require('config.nvim-lspconfig')]]
