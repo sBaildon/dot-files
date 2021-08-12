@@ -35,7 +35,7 @@
     pkgs.lazygit
     pkgs.libwebp
     pkgs.neovim
-	pkgs.nodejs-16_x
+    pkgs.nodejs-16_x
     pkgs.pinentry_mac
     pkgs.postgresql
     pkgs.python37
