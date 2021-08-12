@@ -72,6 +72,8 @@ return require('packer').startup({ function()
 		config = function () require('lspkind').init() end
 	}
 
+	use 'gelguy/wilder.nvim'
+
 	-- use 'kyazdani42/nvim-tree.lua'
 end)
 end, config = {
