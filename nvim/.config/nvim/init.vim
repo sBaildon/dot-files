@@ -6,6 +6,7 @@ filetype plugin indent on
 set encoding=utf-8
 set autoindent
 
+
 "hi TSAnnotation ctermfg=7 ctermbg=none cterm=none
 "hi TSAttribute ctermfg=7 ctermbg=none cterm=none
 "hi TSBoolean ctermfg=7 ctermbg=none cterm=none
@@ -220,3 +221,4 @@ func! DeleteTrailingWS()
 endfunc
 
 autocmd BufWritePre * :call DeleteTrailingWS()
+autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()
