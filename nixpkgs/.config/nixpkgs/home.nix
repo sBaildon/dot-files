@@ -49,7 +49,7 @@
     pkgs.step-cli
     pkgs.stow
     pkgs.stripe-cli
-    pkgs.terraform_0_15
+    pkgs.terraform
     pkgs.tree
     pkgs.tree-sitter
     pkgs.watch
