@@ -1,4 +1,5 @@
 return require('packer').startup(function()
+return require('packer').startup({ function()
 	use 'wbthomason/packer.nvim'
 
 	use '~/sources/sbaildon/base16_256.nvim'
@@ -73,3 +74,9 @@ return require('packer').startup(function()
 
 	-- use 'kyazdani42/nvim-tree.lua'
 end)
+end, config = {
+		display = {
+			prompt_border = "single"
+
+		}
+}})
