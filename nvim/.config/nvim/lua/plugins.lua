@@ -72,6 +72,8 @@ return require('packer').startup({ function()
 		config = function () require('lspkind').init() end
 	}
 
+	use 'preservim/nerdtree'
+
 	use 'gelguy/wilder.nvim'
 
 	-- use 'kyazdani42/nvim-tree.lua'
