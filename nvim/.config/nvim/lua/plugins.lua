@@ -65,8 +65,6 @@ return require('packer').startup({ function()
 		config = [[require('config.nvim-treesitter')]]
 	}
 
-	-- use { 'norcalli/nvim-colorizer.lua', config = function () require('colorizer').setup() end }
-
 	use {
 		'onsails/lspkind-nvim',
 		config = function () require('lspkind').init() end
