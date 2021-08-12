@@ -48,7 +48,6 @@
     pkgs.step-ca
     pkgs.step-cli
     pkgs.stow
-    pkgs.stripe-cli
     pkgs.terraform
     pkgs.tree
     pkgs.tree-sitter
