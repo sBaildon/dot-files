@@ -43,8 +43,8 @@ return require('packer').startup({ function()
 	}
 
 	use {
-		'glepnir/lspsaga.nvim',
-		config = [[require('config.lspsaga')]]
+		'nvim-telescope/telescope.nvim',
+		requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
 	}
 
 	use {
