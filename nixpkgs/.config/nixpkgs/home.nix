@@ -12,6 +12,7 @@
   home.packages = [
     pkgs.aerc
     pkgs.bat
+    pkgs.bash
     pkgs.cmus
     pkgs.coreutils-prefixed
     pkgs.dnsmasq
