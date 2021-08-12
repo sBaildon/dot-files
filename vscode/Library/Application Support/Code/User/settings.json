@@ -26,18 +26,15 @@
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "go.useLanguageServer": true,
-    "Lua.diagnostics.disable": [
-        "undefined-global"
-    ],
     "tailwindCSS.validate": true,
     "tailwindCSS.emmetCompletions": true,
     "tailwindCSS.showPixelEquivalents": true,
     "telemetry.enableTelemetry": false,
     "window.autoDetectColorScheme": true,
     "window.nativeTabs": true,
-    "workbench.colorTheme": "GitHub Light",
-    "workbench.preferredDarkColorTheme": "GitHub Dark",
-    "workbench.preferredLightColorTheme": "GitHub Light",
+    "workbench.colorTheme": "Serendipity Light",
+    "workbench.preferredDarkColorTheme": "Serendipity Dark",
+    "workbench.preferredLightColorTheme": "Serendipity Light",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 16,
     "vs-kubernetes": {
@@ -45,9 +42,11 @@
             "resource-limits"
         ]
     },
-    "vim.enableNeovim": true,
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "redhat.telemetry.enabled": false,
+    "files.exclude": {
+        "**/.elixir_ls": true
+    },
 }
