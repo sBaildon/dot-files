@@ -28,7 +28,7 @@
     pkgs.gnupg
     pkgs.htop
     pkgs.hugo
-	pkgs.go
+    pkgs.go
     pkgs.imagemagick
     pkgs.jq
     pkgs.kustomize
