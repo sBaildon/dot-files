@@ -50,6 +50,7 @@
     pkgs.step-cli
     pkgs.stow
     pkgs.terraform
+    pkgs.terraform-ls
     pkgs.tree
     pkgs.tree-sitter
     pkgs.watch
