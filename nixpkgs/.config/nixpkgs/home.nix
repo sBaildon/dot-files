@@ -33,6 +33,7 @@
     pkgs.jq
     pkgs.kustomize
     pkgs.lazygit
+    pkgs.less
     pkgs.libwebp
     pkgs.neovim
     pkgs.nodejs-16_x
