@@ -1,0 +1,2 @@
+disable_checkpoint = false
+plugin_cache_dir = "$XDG_DATA_HOME/terraform/plugins"
