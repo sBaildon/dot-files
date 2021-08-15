@@ -45,6 +45,7 @@ set -x PSQLRC "$XDG_CONFIG_HOME"/pg/psqlrc
 set -x PSQL_HISTORY "$XDG_CACHE_HOME"/pg/psql_history
 set -x PYENV_ROOT "$XDG_DATA_HOME"/pyenv
 set -x PYTHON_EGG_CACHE "$XDG_CACHE_HOME"/python-eggs
+set -x PYTHONHISTFILE "$XDG_DATA_HOME"/python/python_history
 set -x RBENV_ROOT "$XDG_DATA_HOME"/rbenv
 set -x REDISCLI_HISTFILE "$XDG_DATA_HOME"/redis/rediscli_history
 set -x REDISCLI_RCFILE "$XDG_CONFIG_HOME"/redis/redisclirc
