@@ -67,7 +67,10 @@ return require('packer').startup({ function()
 		config = function () require('lspkind').init() end
 	}
 
-	use 'preservim/nerdtree'
+	use {
+		'ms-jpq/chadtree',
+		run = ':CHADdeps'
+	}
 
 	use 'gelguy/wilder.nvim'
 
