@@ -7,6 +7,10 @@ require('lspconfig').gopls.setup({
 	on_attach = on_attach
 })
 
+require('lspconfig').terraformls.setup({
+	on_attach = on_attach
+})
+
 require('lspconfig').yamlls.setup({
 	on_attach = on_attach
 })
