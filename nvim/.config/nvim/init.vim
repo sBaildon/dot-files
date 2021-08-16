@@ -81,10 +81,10 @@ hi CursorWord cterm=underline
 hi SignColumn ctermfg=none ctermbg=0 cterm=none
 hi EndOfBuffer ctermfg=8 ctermbg=0 cterm=none
 hi Folded ctermfg=6 ctermbg=18 cterm=none
-hi Visual ctermfg=none ctermbg=18 cterm=none
+hi Visual ctermfg=2 ctermbg=18 cterm=none
 hi Search ctermfg=none ctermbg=none cterm=bold,reverse
 hi IncSearch ctermfg=none ctermbg=3 cterm=reverse
-hi NonText ctermfg=7 ctermbg=18 cterm=none
+hi NonText ctermfg=8
 hi VertSplit ctermfg=8 ctermbg=none cterm=none
 hi ErrorMsg ctermfg=1 ctermbg=none cterm=none
 hi WarningMsg ctermfg=3 ctermbg=none cterm=none
@@ -125,7 +125,7 @@ hi LspReferenceWrite ctermfg=1 ctermbg=none cterm=none
 hi LspDiagnosticsDefaultError ctermfg=1 ctermbg=none cterm=none
 hi LspDiagnosticsDefaultWarning ctermfg=3 ctermbg=none cterm=none
 hi LspDiagnosticsDefaultInformation ctermfg=6 ctermbg=none cterm=none
-hi LspDiagnosticsDefaultHint ctermfg=5 ctermbg=none cterm=none
+hi LspDiagnosticsDefaultHint ctermfg=2 ctermbg=none cterm=none
 
 hi Pmenu ctermfg=7 ctermbg=18  cterm=none
 hi PmenuSel ctermfg=0 ctermbg=3 cterm=none
@@ -134,6 +134,7 @@ hi PmenuThumb ctermfg=none ctermbg=7 cterm=none
 
 hi link CompeDocumentation NormalFloat
 hi CompeDocumentationBorder ctermfg=3 ctermbg=0 cterm=none
+hi link TelescopeBorder FloatBorder
 hi NormalFloat ctermbg=0 ctermfg=7
 hi FloatBorder ctermbg=0 ctermfg=7
 hi FloatShadow ctermbg=0 ctermfg=3
@@ -149,8 +150,6 @@ nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 nnoremap <C-i> i<Space><Esc>r
 
-au TextYankPost * silent! lua require'highlight'.on_yank("IncSearch", 500, vim.v.event)
-
 lua << EOF
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
 vim.lsp.diagnostic.on_publish_diagnostics, {
@@ -159,7 +158,7 @@ vim.lsp.diagnostic.on_publish_diagnostics, {
 	}
 )
 
-local signs = { Error = "!!", Warning = "!", Hint = "▪", Information = "▪" }
+local signs = { Error = "▶", Warning = "▶", Hint = "◆", Information = "◆" }
 
 for type, icon in pairs(signs) do
 	local hl = "LspDiagnosticsSign" .. type
