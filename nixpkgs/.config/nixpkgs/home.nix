@@ -19,9 +19,10 @@
     pkgs.elixir
     pkgs.elixir_ls
     pkgs.exa
-    pkgs.fish
-    pkgs.fortune
     pkgs.fd
+    pkgs.fish
+    pkgs.flyctl
+    pkgs.fortune
     pkgs.fzf
     pkgs.git
     pkgs.gnumake
