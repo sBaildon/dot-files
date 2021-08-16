@@ -149,6 +149,7 @@ nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 nnoremap <C-i> i<Space><Esc>r
 
+au TextYankPost * silent! lua require'highlight'.on_yank("IncSearch", 500, vim.v.event)
 
 lua << EOF
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
