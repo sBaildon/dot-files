@@ -67,9 +67,10 @@ return require('packer').startup({ function()
 		config = function () require('lspkind').init() end
 	}
 
+	-- Neovim treesitter plugin for setting the commentstring based on the cursor location in a file.
 	use {
-		'ms-jpq/chadtree',
-		run = ':CHADdeps'
+		'JoosepAlviste/nvim-ts-context-commentstring',
+		requires = {{'nvim-treesitter'}}
 	}
 
 	use 'gelguy/wilder.nvim'
