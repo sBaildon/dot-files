@@ -69,19 +69,33 @@ return require('packer').startup({ function()
 
 	-- use 'gelguy/wilder.nvim'
 
+	-- Jump into the repositories (git, mercurial…) of your filesystem with telescope.nvim
+	use {
+		'cljoly/telescope-repo.nvim',
+		requires = {'nvim-telescope/telescope.nvim'},
+		config = [[require('config.telescope-repo')]]
+	}
+
+	use {
+		'gbrlsnchs/telescope-lsp-handlers.nvim',
+		requires = {'nvim-telescope/telescope.nvim'},
+		config = [[require('config.telescope-lsp-handlers')]]
+	}
+
 	-- -- Neovim treesitter plugin for setting the commentstring based on the cursor location in a file.
-	-- use {
-	-- 	'JoosepAlviste/nvim-ts-context-commentstring',
-	-- 	requires = {{'nvim-treesitter'}}
-	-- }
+	use {
+		'JoosepAlviste/nvim-ts-context-commentstring',
+		requires = {{'nvim-treesitter'}}
+	}
 
-	-- use {
-	-- 	'lukas-reineke/indent-blankline.nvim',
-	-- 	config = [[require('config.indent-blankline')]],
-	-- 	opt = true
-	-- }
+	-- Indent guides for Neovim
+	use {
+		'lukas-reineke/indent-blankline.nvim',
+		config = [[require('config.indent-blankline')]]
+	}
 
-	-- use {'simrat39/symbols-outline.nvim', disable = true}
+	-- A tree like view for symbols in Neovim using the Language Server Protocol.
+	use 'simrat39/symbols-outline.nvim'
 
 end, config = {
 		display = {

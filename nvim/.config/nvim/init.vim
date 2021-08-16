@@ -139,6 +139,11 @@ hi NormalFloat ctermbg=0 ctermfg=7
 hi FloatBorder ctermbg=0 ctermfg=7
 hi FloatShadow ctermbg=0 ctermfg=3
 
+" link to LineNr because otherwise when passing over a blank line,
+" the CursorLine colours are left behind as an artifact and looks bad
+hi link IndentBlanklineSpaceCharBlankline LineNr
+hi link IndentBlanklineChar  LineNr
+
 hi Whitespace ctermfg=18 ctermbg=none gui=nocombine
 
 nnoremap <silent> <leader>gr <cmd>lua vim.lsp.buf.rename()<CR>
@@ -197,7 +202,7 @@ set ruler
 set mouse=
 
 " signcolumn always showing, and make it blend
-set signcolumn=yes:1
+set signcolumn=auto
 
 " highlight current line, and alt colour for
 " line number
