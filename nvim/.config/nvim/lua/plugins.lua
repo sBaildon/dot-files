@@ -75,6 +75,10 @@ return require('packer').startup({ function()
 	use 'gelguy/wilder.nvim'
 
 	-- use 'kyazdani42/nvim-tree.lua'
+	use {
+		'lukas-reineke/indent-blankline.nvim',
+		config = [[require('config.indent-blankline')]]
+	}
 end, config = {
 		display = {
 			prompt_border = "single"

@@ -138,6 +138,8 @@ hi NormalFloat ctermbg=0 ctermfg=7
 hi FloatBorder ctermbg=0 ctermfg=7
 hi FloatShadow ctermbg=0 ctermfg=3
 
+hi Whitespace ctermfg=18 ctermbg=none gui=nocombine
+
 nnoremap <silent> <leader>gr <cmd>lua vim.lsp.buf.rename()<CR>
 noremap <silent> <C-u> <cmd>lua vim.lsp.diagnostic.show_line_diagnostics({ show_header = false, border = "single" })<CR>
 
