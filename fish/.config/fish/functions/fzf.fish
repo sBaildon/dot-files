@@ -1,3 +1,8 @@
 function fzf
-	command fzf --color=fg:7,hl:3,gutter:0,query:7:regular,fg+:21:regular,bg+:18,info:8 --multi $argv
+	command fzf \
+		--color=fg:-1,hl:3,gutter:0,query:7:regular,fg+:21:regular,bg+:18,hl+:3:reverse,info:8,border:18 \
+		--multi \
+		--border=sharp \
+		--info=inline \
+		$argv
 end
