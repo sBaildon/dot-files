@@ -1,3 +1,3 @@
 function cat
-	bat --style=grid,numbers $argv
+	bat $argv
 end
