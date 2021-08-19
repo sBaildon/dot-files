@@ -9,4 +9,8 @@ else
 	set theme ~/.config/kitty/base16-mexico-light-256.conf
 end
 
-kitty @ set-colors --all --configured $theme
+set theme ~/.config/kitty/base16-nord-256.conf
+
+if status is-interactive
+	kitty @ set-colors --all --configured $theme
+end
