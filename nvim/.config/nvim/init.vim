@@ -135,9 +135,9 @@ hi PmenuThumb ctermfg=none ctermbg=7 cterm=none
 hi link CompeDocumentation NormalFloat
 hi CompeDocumentationBorder ctermfg=3 ctermbg=0 cterm=none
 hi link TelescopeBorder FloatBorder
-hi FloatShadow ctermbg=0 ctermfg=3
 hi NormalFloat ctermfg=7 ctermbg=0
 hi FloatBorder ctermfg=8 ctermbg=0
+hi FloatShadow ctermfg=3 ctermbg=0
 
 " link to LineNr because otherwise when passing over a blank line,
 " the CursorLine colours are left behind as an artifact and looks bad
