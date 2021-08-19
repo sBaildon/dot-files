@@ -144,7 +144,7 @@ hi FloatShadow ctermbg=0 ctermfg=3
 hi link IndentBlanklineSpaceCharBlankline LineNr
 hi link IndentBlanklineChar  LineNr
 
-hi Whitespace ctermfg=18 ctermbg=none gui=nocombine
+hi Whitespace ctermfg=8 ctermbg=none
 
 nnoremap <silent> <leader>gr <cmd>lua vim.lsp.buf.rename()<CR>
 noremap <silent> <C-u> <cmd>lua vim.lsp.diagnostic.show_line_diagnostics({ show_header = false, border = "single" })<CR>
