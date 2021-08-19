@@ -16,7 +16,6 @@ return require('packer').startup({ function()
 			'nvim-treesitter/nvim-treesitter-textobjects',
 		},
 		run = ':TSUpdate',
-		commit = "60a26ef3218057a544b3fd6697e979e6bad648d", -- pin this version because vim syntax is broken?
 		config = [[require('config.nvim-treesitter')]]
 	}
 
