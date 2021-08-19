@@ -19,11 +19,7 @@ return require('packer').startup({ function()
 		config = [[require('config.nvim-treesitter')]]
 	}
 
-	use {
-		'nvim-treesitter/playground',
-		opt = true,
-		cmd = "TSHighlightCapturesUnderCursor"
-	}
+	use 'nvim-treesitter/playground'
 
 	use {
 		'~/sources/sbaildon/lualine.nvim',
