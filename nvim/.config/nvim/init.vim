@@ -82,8 +82,8 @@ hi SignColumn ctermfg=none ctermbg=0 cterm=none
 hi EndOfBuffer ctermfg=8 ctermbg=0 cterm=none
 hi Folded ctermfg=6 ctermbg=18 cterm=none
 hi Visual ctermfg=2 ctermbg=18 cterm=none
-hi IncSearch ctermfg=none ctermbg=3 cterm=reverse
 hi Search ctermfg=0 ctermbg=3 cterm=none
+hi IncSearch ctermfg=3 ctermbg=none cterm=none
 hi NonText ctermfg=8
 hi VertSplit ctermfg=8 ctermbg=none cterm=none
 hi ErrorMsg ctermfg=1 ctermbg=none cterm=none
