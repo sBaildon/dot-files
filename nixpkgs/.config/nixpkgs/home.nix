@@ -38,6 +38,7 @@
     pkgs.libwebp
     pkgs.neovim
     pkgs.nodejs-16_x
+    pkgs.pastel
     pkgs.pinentry_mac
     pkgs.postgresql
     pkgs.python37
