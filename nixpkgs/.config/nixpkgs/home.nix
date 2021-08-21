@@ -45,6 +45,7 @@
     pkgs.rclone
     pkgs.restic
     pkgs.ripgrep
+    pkgs.rsync
     pkgs.rustup
     pkgs.skhd
     pkgs.sops
