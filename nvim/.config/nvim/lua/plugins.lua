@@ -50,6 +50,12 @@ return require('packer').startup({ function()
 		config = [[require('config.nvim-lspconfig')]]
 	}
 
+	use {
+		'kyazdani42/nvim-tree.lua',
+		opt = true,
+		cmd = {"NvimTreeToggle"}
+	}
+
 	-- use {
 	-- 	'hrsh7th/nvim-compe',
 	-- 	config = [[require('config.nvim-compe')]]
