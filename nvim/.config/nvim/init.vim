@@ -81,7 +81,7 @@ hi Normal ctermfg=7 ctermbg=none cterm=none guibg=none
 hi DiffAdd ctermfg=2 ctermbg=none cterm=none
 hi DiffChange ctermfg=5 ctermbg=none cterm=none
 hi DiffDelete ctermfg=1 ctermbg=none cterm=none
-hi LineNr ctermfg=8 ctermbg=0 cterm=none
+hi LineNr ctermfg=19 ctermbg=0 cterm=none
 hi CursorLineNr ctermfg=8 ctermbg=none cterm=none guibg=none
 hi CursorLine ctermfg=none ctermbg=18 cterm=none
 hi CursorWord cterm=underline
