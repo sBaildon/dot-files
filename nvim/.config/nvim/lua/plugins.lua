@@ -98,6 +98,17 @@ return require('packer').startup({ function()
 	-- A tree like view for symbols in Neovim using the Language Server Protocol.
 	use 'simrat39/symbols-outline.nvim'
 
+	use {
+		"folke/trouble.nvim",
+		requires = {{"kyazdani42/nvim-web-devicons", opt = true}},
+		config = function()
+			require("trouble").setup {
+				icons = false,
+				use_lsp_diagnostic_signs = true
+			}
+		end
+	}
+
 end, config = {
 		display = {
 			prompt_border = "single"
