@@ -39,6 +39,7 @@
     pkgs.neovim
     pkgs.nodejs-16_x
     pkgs.pastel
+    pkgs.pet
     pkgs.pinentry_mac
     pkgs.postgresql
     pkgs.python37
