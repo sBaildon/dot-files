@@ -66,12 +66,6 @@ return require('packer').startup({ function()
 		cmd = {"NvimTreeToggle"}
 	}
 
-	-- use {
-	-- 	'hrsh7th/nvim-compe',
-	-- 	config = [[require('config.nvim-compe')]]
-	-- }
-
-
 	-- -- vscode-like pictograms for neovim lsp completion items
 	-- use {
 	-- 	'onsails/lspkind-nvim',
