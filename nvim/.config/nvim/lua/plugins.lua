@@ -126,6 +126,12 @@ return require('packer').startup({ function()
 
 	use 'jubnzv/virtual-types.nvim'
 
+	use {
+		'onsails/vimway-lsp-diag.nvim',
+		config = function() require("vimway-lsp-diag").init({}) end
+
+	}
+
 end, config = {
 		display = {
 			prompt_border = "single"
