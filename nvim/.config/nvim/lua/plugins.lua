@@ -124,6 +124,8 @@ return require('packer').startup({ function()
 		end
 	}
 
+	use 'jubnzv/virtual-types.nvim'
+
 end, config = {
 		display = {
 			prompt_border = "single"
