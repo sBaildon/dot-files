@@ -33,6 +33,9 @@ return require('packer').startup({ function()
 
 	use {
 		'~/sources/sbaildon/lualine.nvim',
+		requires = {
+			'nvim-lua/lsp-status.nvim'
+		},
 		config = [[require('config.lualine')]]
 	}
 

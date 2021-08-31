@@ -168,15 +168,9 @@ nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 nnoremap <leader>fc <cmd>lua require('telescope.builtin').commands()<cr>
 nnoremap <C-p> <cmd>Telescope<cr>
+nnoremap <leader>lf <cmd>lua vim.lsp.buf.formatting_sync()<cr>
 
 lua << EOF
-vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
-vim.lsp.diagnostic.on_publish_diagnostics, {
-	underline = true,
-	virtual_text = false
-	}
-)
-
 local signs = { Error = "▶", Warning = "▶", Hint = "◆", Information = "◆" }
 
 for type, icon in pairs(signs) do
@@ -189,11 +183,6 @@ nnoremap <C-n> :NvimTreeToggle<CR>
 
 " don't wrap lines
 set nowrap
-
-set completeopt=menuone
-inoremap <silent><expr> <C-Space> compe#complete()
-"inoremap <silent><expr> <CR>      compe#confirm('<CR>')
-inoremap <silent><expr> <C-e>     compe#close('<C-e>')
 
 nnoremap <silent> <leader>uc :TSHighlightCapturesUnderCursor<cr>
 
