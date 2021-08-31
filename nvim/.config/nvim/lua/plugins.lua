@@ -103,6 +103,17 @@ return require('packer').startup({ function()
 	use 'simrat39/symbols-outline.nvim'
 
 	use {
+		"SmiteshP/nvim-gps",
+		requires = "nvim-treesitter/nvim-treesitter",
+		config = function() require("nvim-gps").setup({
+			separator = " > ",
+			icons = {
+				["function-name"] = "⨍ "
+			}
+		}) end
+	}
+
+	use {
 		"folke/trouble.nvim",
 		requires = {{"kyazdani42/nvim-web-devicons", opt = true}},
 		config = function()
