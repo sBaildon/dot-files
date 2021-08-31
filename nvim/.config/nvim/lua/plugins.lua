@@ -10,6 +10,16 @@ return require('packer').startup({ function()
 	use 'mattn/emmet-vim'
 
 	use {
+		'hrsh7th/nvim-cmp',
+		requires = {
+			"hrsh7th/cmp-nvim-lsp",
+			"hrsh7th/cmp-buffer",
+			"hrsh7th/cmp-path"
+		},
+		config = [[require('config.nvim-cmp')]]
+	}
+
+	use {
 		'nvim-treesitter/nvim-treesitter',
 		requires = {
 			'nvim-treesitter/nvim-treesitter-refactor',
