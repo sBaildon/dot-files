@@ -1,5 +1,5 @@
 require("indent_blankline").setup({
-	show_trailing_blankline_indent = false,
+	show_trailing_blankline_indent = true,
 	show_first_indent_level = true,
 	use_treesitter = true,
 	filetype_exclude = {"help", "terminal", "packer"}
