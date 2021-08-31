@@ -49,6 +49,7 @@
     pkgs.rsync
     pkgs.rustup
     pkgs.skhd
+    pkgs.skopeo
     pkgs.sops
     pkgs.step-ca
     pkgs.step-cli
