@@ -108,8 +108,8 @@ hi SpecialChar ctermfg=16 ctermbg=none cterm=none
 hi Identifier ctermfg=6 ctermbg=none cterm=none
 hi default link Character Identifier
 hi Comment ctermfg=8 ctermbg=none cterm=italic
-hi Function ctermfg=4 ctermbg=none cterm=bold
-hi Keyword ctermfg=5 ctermbg=none cterm=none
+hi Function ctermfg=4 ctermbg=none cterm=none
+hi Keyword ctermfg=5 ctermbg=none cterm=bold
 hi Operator ctermfg=7 ctermbg=none cterm=none
 hi Label ctermfg=6  ctermbg=none cterm=none
 hi Conditional ctermfg=5 ctermbg=none cterm=none
