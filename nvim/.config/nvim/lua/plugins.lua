@@ -110,12 +110,7 @@ return require('packer').startup({ function()
 	use {
 		"SmiteshP/nvim-gps",
 		requires = "nvim-treesitter/nvim-treesitter",
-		config = function() require("nvim-gps").setup({
-			separator = " > ",
-			icons = {
-				["function-name"] = "⨍ "
-			}
-		}) end
+		config = function() require("nvim-gps").setup({ }) end
 	}
 
 	use {
