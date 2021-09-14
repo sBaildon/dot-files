@@ -18,6 +18,7 @@
     pkgs.dnsmasq
     pkgs.elixir
     pkgs.elixir_ls
+    pkgs.entr
     pkgs.exa
     pkgs.fd
     pkgs.fish
