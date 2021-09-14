@@ -64,5 +64,7 @@ set -x WEECHAT_HOME "$XDG_CONFIG_HOME"/weechat
 set -x WGETRC "$XDG_CONFIG_HOME"/wget/config
 set -x WINEPREFIX "$XDG_DATA_HOME"/wine
 set -x WRANGLER_HOME "$XDG_CONFIG_HOME"/wrangler
+set -x VAGRANT_ALIAS_FILE "$XDG_DATA_HOME"/vagrant/aliases
+set -x VAGRANT_HOME "$XDG_DATA_HOME"/vagrant
 set -x VSCODE_EXTENSIONS "$XDG_DATA_HOME"/vscode/extensions
 set -x __GL_SHADER_DISK_CACHE_PATH "$XDG_CACHE_HOME"/nv
