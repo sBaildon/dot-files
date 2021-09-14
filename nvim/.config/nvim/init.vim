@@ -86,7 +86,7 @@ hi CursorLineNr ctermfg=8 ctermbg=none cterm=none guibg=none
 hi CursorLine ctermfg=none ctermbg=18 cterm=none
 hi CursorWord cterm=underline
 hi SignColumn ctermfg=none ctermbg=0 cterm=none
-hi EndOfBuffer ctermfg=8 ctermbg=0 cterm=none
+hi link EndOfBuffer LineNr
 hi Folded ctermfg=6 ctermbg=18 cterm=none
 hi Visual ctermfg=2 ctermbg=18 cterm=none
 hi Search ctermfg=0 ctermbg=3 cterm=none
