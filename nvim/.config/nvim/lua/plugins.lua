@@ -115,11 +115,10 @@ return require('packer').startup({ function()
 
 	use {
 		"folke/trouble.nvim",
-		requires = {{"kyazdani42/nvim-web-devicons", opt = true}},
+		requires = {{"kyazdani42/nvim-web-devicons"}},
 		config = function()
 			require("trouble").setup {
-				icons = false,
-				use_lsp_diagnostic_signs = true
+				use_lsp_diagnostic_signs = false
 			}
 		end
 	}
