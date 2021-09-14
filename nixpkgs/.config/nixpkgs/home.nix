@@ -11,6 +11,7 @@
 
   home.packages = [
     pkgs.aerc
+    pkgs.as-tree
     pkgs.bat
     pkgs.bash
     pkgs.cmus
