@@ -3,11 +3,6 @@ local _, lsp_status = pcall(require, "lsp-status")
 
 
 lsp_status.config({
-	indicator_errors = '❗',
-	indicator_warnings = '⚠️',
-	indicator_info = '⚡',
-	indicator_hint = '💡',
-	indicator_separator = '',
 	indicator_ok = '',
 	status_symbol = '',
 })
@@ -41,7 +36,7 @@ local lualine_b = {
 
 require('lualine').setup({
 	options = {
-		icons_enabled = false,
+		icons_enabled = true,
 		lower = true,
 		section_separators = {'', ''},
 		component_separators = {'', ''},
@@ -63,8 +58,7 @@ require('lualine').setup({
 			indentation,
 			"encoding",
 			"fileformat",
-			"filetype",
-			separator = "│"
+			"filetype"
 		}
 	}
 })
