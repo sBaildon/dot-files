@@ -47,6 +47,9 @@ return require('packer').startup({ function()
 
 	use {
 		'windwp/nvim-autopairs',
+		requires = {
+			"hrsh7th/nvim-cmp"
+		},
 		config = [[require('config.nvim-autopairs')]]
 	}
 
