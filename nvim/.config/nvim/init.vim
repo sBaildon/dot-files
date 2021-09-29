@@ -81,11 +81,11 @@ hi Normal ctermfg=7 ctermbg=none cterm=none guibg=none
 hi DiffAdd ctermfg=2 ctermbg=none cterm=none
 hi DiffChange ctermfg=5 ctermbg=none cterm=none
 hi DiffDelete ctermfg=1 ctermbg=none cterm=none
-hi LineNr ctermfg=19 ctermbg=0 cterm=none
+hi LineNr ctermfg=19 ctermbg=none cterm=none
 hi CursorLineNr ctermfg=8 ctermbg=none cterm=none guibg=none
 hi CursorLine ctermfg=none ctermbg=18 cterm=none
 hi CursorWord cterm=underline
-hi SignColumn ctermfg=none ctermbg=0 cterm=none
+hi SignColumn ctermfg=none ctermbg=none cterm=none
 hi link EndOfBuffer LineNr
 hi Folded ctermfg=6 ctermbg=18 cterm=none
 hi Visual ctermfg=2 ctermbg=18 cterm=none
@@ -139,7 +139,7 @@ hi LspDiagnosticsUnderlineWarning cterm=undercurl
 hi LspDiagnosticsUnderlineInformation cterm=undercurl
 hi LspDiagnosticsUnderlineHint cterm=undercurl
 
-hi Pmenu ctermfg=7 ctermbg=18  cterm=none
+hi Pmenu ctermfg=7 ctermbg=18 cterm=none
 hi PmenuSel ctermfg=0 ctermbg=3 cterm=none
 hi PmenuSbar ctermfg=none ctermbg=18 cterm=none
 hi PmenuThumb ctermfg=none ctermbg=7 cterm=none
@@ -155,6 +155,7 @@ hi FloatShadow ctermfg=3 ctermbg=0
 " the CursorLine colours are left behind as an artifact and looks bad
 hi link IndentBlanklineSpaceCharBlankline LineNr
 hi link IndentBlanklineChar  LineNr
+hi link IndentBlanklineChar LineNr
 
 hi link NvimTreeGitDirty GitSignsChange
 hi link NvimTreeGitNew GitSignsAdd
