@@ -152,9 +152,6 @@ hi PmenuSel ctermfg=0 ctermbg=3 cterm=none
 hi PmenuSbar ctermfg=none ctermbg=18 cterm=none
 hi PmenuThumb ctermfg=none ctermbg=7 cterm=none
 
-hi link CompeDocumentation NormalFloat
-hi CompeDocumentationBorder ctermfg=3 ctermbg=0 cterm=none
-hi link TelescopeBorder FloatBorder
 hi NormalFloat ctermfg=7 ctermbg=0
 hi FloatBorder ctermfg=8 ctermbg=0
 hi FloatShadow ctermfg=3 ctermbg=0
@@ -164,13 +161,24 @@ hi link IndentBlanklineSpaceCharBlankline LineNr
 hi link IndentBlanklineChar LineNr
 hi link IndentBlanklineContextChar IncSearch
 
+" set colorcolumn to clear trailing cursorlines when navigating
+" indent-blankline uses some newer features like "hl_mode=combine"
+" that neovim doesn't render properly
+set colorcolumn=99999 " https://github.com/lukas-reineke/indent-blankline.nvim/issues/59
+
 hi link NvimTreeGitDirty GitSignsChange
 hi link NvimTreeGitNew GitSignsAdd
 hi link NvimTreeGitDeleted GitSignsDelete
 hi link NvimTreeIndentMarker LineNr
 " hi link NvimTreeFolderName IncSearch
+" hi NvimTreeFolderIcon ctermfg=3
+hi link NvimTreeNormal Pmenu
+autocmd FileType Outline setlocal winhighlight=Normal:Pmenu
+autocmd FileType Trouble setlocal winhighlight=Normal:Pmenu
+" autocmd FileType NvimTree setlocal winhighlight=Normal:Error
 " hi link NvimTreeOpenedFolderName IncSearch
 " hi link NvimTreeEmptyFolderName IncSearch
+
 hi Whitespace ctermfg=8 ctermbg=none
 
 hi link TelescopeMatching Search
@@ -179,11 +187,12 @@ noremap <silent> <C-u> <cmd>lua vim.lsp.diagnostic.show_line_diagnostics({ show_
 
 nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
+nnoremap <leader>fz <cmd>lua require('telescope.builtin').current_buffer_fuzzy_find()<cr>
 nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 nnoremap <leader>fc <cmd>lua require('telescope.builtin').commands()<cr>
+nnoremap <leader>fc <cmd>lua require('telescope.builtin').commands()<cr>
 nnoremap <C-p> <cmd>Telescope<cr>
-nnoremap <leader>lf <cmd>lua vim.lsp.buf.formatting_sync()<cr>
 
 lua << EOF
 local signs = { Error = "▶", Warning = "▶", Hint = "◆", Information = "◆" }
