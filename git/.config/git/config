@@ -31,3 +31,5 @@
         textconv = "sops --decrypt"
 [pull]
 	rebase = true
+[clone]
+	defaultRemoteName = "upstream"
