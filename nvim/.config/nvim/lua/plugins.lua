@@ -69,7 +69,8 @@ return require('packer').startup({ function()
 	use {
 		'kyazdani42/nvim-tree.lua',
 		opt = true,
-		cmd = {"NvimTreeToggle"}
+		cmd = {"NvimTreeToggle"},
+		config = [[require('config.nvim-tree')]]
 	}
 
 	-- -- vscode-like pictograms for neovim lsp completion items
