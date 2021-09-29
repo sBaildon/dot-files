@@ -158,6 +158,7 @@ hi link TelescopeBorder FloatBorder
 hi NormalFloat ctermfg=7 ctermbg=0
 hi FloatBorder ctermfg=8 ctermbg=0
 hi FloatShadow ctermfg=3 ctermbg=0
+hi link TelescopeBorder FloatBorder
 
 " link to LineNr because otherwise when passing over a blank line,
 " the CursorLine colours are left behind as an artifact and looks bad
