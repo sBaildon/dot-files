@@ -246,4 +246,3 @@ func! DeleteTrailingWS()
 endfunc
 
 autocmd BufWritePre * :call DeleteTrailingWS()
-autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()
