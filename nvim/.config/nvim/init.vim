@@ -162,6 +162,7 @@ hi link TelescopeBorder FloatBorder
 
 hi link IndentBlanklineSpaceCharBlankline LineNr
 hi link IndentBlanklineChar LineNr
+hi link IndentBlanklineContextChar IncSearch
 
 hi link NvimTreeGitDirty GitSignsChange
 hi link NvimTreeGitNew GitSignsAdd
