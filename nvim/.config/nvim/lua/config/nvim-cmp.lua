@@ -1,6 +1,6 @@
 local cmp = require("cmp")
 
-cmp.setup({
+local opts = {
 	mapping = {
 		['<C-Space>'] = cmp.mapping.complete()
 	},
@@ -13,4 +13,13 @@ cmp.setup({
 		{ name = "buffer "},
 		{ name = "path" },
 	}
-})
+}
+
+local lspkind_available, lspkind = pcall(require, "lspkind")
+if lspkind_available then
+	opts.formatting = {
+		format = lspkind.cmp_format({with_text = false, maxwidth = 50})
+	}
+end
+
+cmp.setup({opts })

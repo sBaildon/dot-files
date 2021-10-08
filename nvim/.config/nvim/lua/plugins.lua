@@ -14,7 +14,8 @@ return require('packer').startup({ function()
 		requires = {
 			"hrsh7th/cmp-nvim-lsp",
 			"hrsh7th/cmp-buffer",
-			"hrsh7th/cmp-path"
+			"hrsh7th/cmp-path",
+			{'onsails/lspkind-nvim', opt = true}
 		},
 		config = [[require('config.nvim-cmp')]]
 	}
@@ -72,12 +73,6 @@ return require('packer').startup({ function()
 		cmd = {"NvimTreeToggle"},
 		config = [[require('config.nvim-tree')]]
 	}
-
-	-- -- vscode-like pictograms for neovim lsp completion items
-	-- use {
-	-- 	'onsails/lspkind-nvim',
-	-- 	config = function () require('lspkind').init() end
-	-- }
 
 	-- use 'gelguy/wilder.nvim'
 
