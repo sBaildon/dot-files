@@ -49,8 +49,13 @@ local on_attach = function(client, bufnr)
 
 end
 
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+
+
 require('lspconfig').gopls.setup({
-	on_attach = on_attach
+	on_attach = on_attach,
+	capabilities = capabilities
 })
 
 require('lspconfig').terraformls.setup({
