@@ -18,8 +18,8 @@ local opts = {
 local lspkind_available, lspkind = pcall(require, "lspkind")
 if lspkind_available then
 	opts.formatting = {
-		format = lspkind.cmp_format({with_text = false, maxwidth = 50})
+		format = lspkind.cmp_format()
 	}
 end
 
-cmp.setup({opts })
+cmp.setup(opts)

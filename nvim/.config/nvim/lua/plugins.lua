@@ -9,13 +9,14 @@ return require('packer').startup({ function()
 
 	use 'mattn/emmet-vim'
 
+	use 'onsails/lspkind-nvim'
+
 	use {
 		'hrsh7th/nvim-cmp',
 		requires = {
 			"hrsh7th/cmp-nvim-lsp",
 			"hrsh7th/cmp-buffer",
-			"hrsh7th/cmp-path",
-			{'onsails/lspkind-nvim', opt = true}
+			"hrsh7th/cmp-path"
 		},
 		config = [[require('config.nvim-cmp')]]
 	}
