@@ -170,14 +170,8 @@ hi link NvimTreeGitDirty GitSignsChange
 hi link NvimTreeGitNew GitSignsAdd
 hi link NvimTreeGitDeleted GitSignsDelete
 hi link NvimTreeIndentMarker LineNr
-" hi link NvimTreeFolderName IncSearch
-" hi NvimTreeFolderIcon ctermfg=3
-hi link NvimTreeNormal Pmenu
 autocmd FileType Outline setlocal winhighlight=Normal:Pmenu
 autocmd FileType Trouble setlocal winhighlight=Normal:Pmenu
-" autocmd FileType NvimTree setlocal winhighlight=Normal:Error
-" hi link NvimTreeOpenedFolderName IncSearch
-" hi link NvimTreeEmptyFolderName IncSearch
 
 hi Whitespace ctermfg=8 ctermbg=none
 
