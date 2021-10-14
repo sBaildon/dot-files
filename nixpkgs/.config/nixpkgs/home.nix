@@ -10,11 +10,8 @@
   home.homeDirectory = "/Users/sbaildon";
 
   home.packages = [
-    pkgs.aerc
-    pkgs.as-tree
     pkgs.bat
     pkgs.bash
-    pkgs.cmus
     pkgs.coreutils-prefixed
     pkgs.dnsmasq
     pkgs.elixir
@@ -23,16 +20,13 @@
     pkgs.exa
     pkgs.fd
     pkgs.fish
-    pkgs.flyctl
     pkgs.fortune
     pkgs.fzf
     pkgs.git
     pkgs.gnumake
     pkgs.gnupg
     pkgs.htop
-    pkgs.hugo
     pkgs.go
-    pkgs.imagemagick
     pkgs.jq
     pkgs.kustomize
     pkgs.lazygit
