@@ -116,6 +116,7 @@ return require('packer').startup({ function()
 
 	use {
 		"SmiteshP/nvim-gps",
+		disable = true,
 		requires = "nvim-treesitter/nvim-treesitter",
 		config = function() require("nvim-gps").setup({ }) end
 	}
