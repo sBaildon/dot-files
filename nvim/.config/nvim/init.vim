@@ -157,8 +157,8 @@ hi FloatBorder ctermfg=8 ctermbg=0
 hi FloatShadow ctermfg=3 ctermbg=0
 hi link TelescopeBorder FloatBorder
 
-hi link IndentBlanklineSpaceCharBlankline LineNr
-hi link IndentBlanklineChar LineNr
+hi IndentBlanklineSpaceCharBlankline ctermfg=18
+hi IndentBlanklineChar ctermfg=18
 hi link IndentBlanklineContextChar IncSearch
 
 " set colorcolumn to clear trailing cursorlines when navigating
