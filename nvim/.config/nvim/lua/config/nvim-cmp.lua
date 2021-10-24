@@ -8,6 +8,9 @@ local opts = {
 		border = { '┌', '─', '┐', '│', '┘', '─', '└', '│' },
 		winhighlight = 'NormalFloat:Pmenu,FloatBorder:Pmenu'
 	},
+	completion = {
+		completeopt = 'menu,menuone,noinsert',
+	},
 	sources = {
 		{ name = "nvim_lsp" },
 		{ name = "buffer "},
