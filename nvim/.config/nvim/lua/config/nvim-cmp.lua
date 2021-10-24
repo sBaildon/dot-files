@@ -11,6 +11,9 @@ local opts = {
 	completion = {
 		completeopt = 'menu,menuone,noinsert',
 	},
+	experimental = {
+		ghost_text = true
+	},
 	sources = {
 		{ name = "nvim_lsp" },
 		{ name = "buffer "},
