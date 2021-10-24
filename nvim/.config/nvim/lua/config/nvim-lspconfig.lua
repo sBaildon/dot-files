@@ -62,9 +62,9 @@ require('lspconfig').terraformls.setup({
 	on_attach = on_attach
 })
 
-require('lspconfig').yamlls.setup({
+--[[ require('lspconfig').yamlls.setup({
 	on_attach = on_attach
-})
+}) ]]
 
 require('lspconfig').elixirls.setup({
 	cmd = { "elixir-ls" },
