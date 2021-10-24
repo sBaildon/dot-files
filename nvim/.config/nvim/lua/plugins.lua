@@ -33,6 +33,8 @@ return require('packer').startup({ function()
 
 	use 'nvim-treesitter/playground'
 
+	use 'ggandor/lightspeed.nvim'
+
 	use {
 		'~/sources/sbaildon/lualine.nvim',
 		requires = {
