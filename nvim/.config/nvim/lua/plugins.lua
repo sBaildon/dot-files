@@ -135,7 +135,7 @@ return require('packer').startup({ function()
 
 	use {
 		'onsails/vimway-lsp-diag.nvim',
-		config = function() require("vimway-lsp-diag").init({}) end
+		config = function() require("diaglist").init({}) end
 
 	}
 
