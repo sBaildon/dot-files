@@ -71,6 +71,11 @@ return require('packer').startup({ function()
 	}
 
 	use {
+		'williamboman/nvim-lsp-installer',
+		requires = { 'neovim/nvim-lspconfig' }
+	}
+
+	use {
 		'kyazdani42/nvim-tree.lua',
 		opt = true,
 		cmd = {"NvimTreeToggle"},
