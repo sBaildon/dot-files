@@ -67,7 +67,7 @@ require('lspconfig').yamlls.setup({
 })
 
 require('lspconfig').elixirls.setup({
-	cmd = { vim.loop.os_homedir().."/.nix-profile/bin/elixir-ls" },
+	cmd = { "elixir-ls" },
 	on_attach = on_attach,
 --[[ on_attach = lsp_status.on_attach,
 	capabilities = lsp_status.capabilities ]]
