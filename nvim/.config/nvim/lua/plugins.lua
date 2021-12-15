@@ -98,12 +98,6 @@ return require('packer').startup({ function()
 		config = [[require('config.telescope-repo')]]
 	}
 
-	use {
-		'gbrlsnchs/telescope-lsp-handlers.nvim',
-		requires = {'nvim-telescope/telescope.nvim'},
-		config = [[require('config.telescope-lsp-handlers')]]
-	}
-
 	-- -- Neovim treesitter plugin for setting the commentstring based on the cursor location in a file.
 	use {
 		'JoosepAlviste/nvim-ts-context-commentstring',
