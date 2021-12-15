@@ -50,7 +50,11 @@ local on_attach = function(client, bufnr)
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+
+local cmp_present = pcall(require, "cmp")
+if cmp_present then
+	capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+end
 
 local present, lspconfig = pcall(require, "lspconfig")
 

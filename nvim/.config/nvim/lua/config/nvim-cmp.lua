@@ -29,3 +29,9 @@ if lspkind_available then
 end
 
 cmp.setup(opts)
+
+local autopairs_available, autopairs = pcall(require, "nvim-autopairs.completion.cmp")
+if autopairs_available then
+	cmp.event:on( 'confirm_done', autopairs.on_confirm_done({ map_char = { tex = '' } }))
+end
+
