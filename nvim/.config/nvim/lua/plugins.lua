@@ -132,11 +132,6 @@ return require('packer').startup({ function()
 
 	use 'jubnzv/virtual-types.nvim'
 
-	use {
-		'onsails/vimway-lsp-diag.nvim',
-		config = function() require("diaglist").init({}) end
-
-	}
 
 end, config = {
 		display = {
