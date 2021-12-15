@@ -18,7 +18,6 @@ endif
 
 let g:syntax_cmd = "skip"
 
-
 "hi TSAnnotation ctermfg=7 ctermbg=none cterm=none
 "hi TSAttribute ctermfg=7 ctermbg=none cterm=none
 "hi TSBoolean ctermfg=7 ctermbg=none cterm=none
