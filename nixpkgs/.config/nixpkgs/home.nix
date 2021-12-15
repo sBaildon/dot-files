@@ -57,7 +57,6 @@
     pkgs.tree-sitter
     pkgs.watch
     pkgs.xh
-    pkgs.yabai
     pkgs.yq-go
   ];
 
