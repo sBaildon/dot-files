@@ -8,12 +8,12 @@
 	<key>EnvironmentVariables</key>
 	<dict>
 		<key>PATH</key>
-		<string>/Users/sbaildon/.nix-profile/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+		<string>/Users/sbaildon/.nix-profile/bin:/Users/sbaildon/.local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
 	</dict>
 
         <key>ProgramArguments</key>
         <array>
-                <string>/Users/sbaildon/.nix-profile/bin/yabai</string>
+                <string>/Users/sbaildon/.local/bin/yabai</string>
         </array>
 
         <key>RunAtLoad</key>
