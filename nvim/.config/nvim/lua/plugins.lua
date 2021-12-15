@@ -5,6 +5,11 @@ return require('packer').startup({ function()
 
 	use 'editorconfig/editorconfig-vim'
 
+	use {
+		'stevearc/dressing.nvim',
+		config = [[require('config.dressing')]]
+	}
+
 	use 'b3nj5m1n/kommentary'
 
 	use 'mattn/emmet-vim'
