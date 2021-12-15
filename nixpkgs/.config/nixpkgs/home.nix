@@ -28,6 +28,7 @@
     pkgs.gnupg
     pkgs.go
     pkgs.htop
+    pkgs.imagemagick
     pkgs.jq
     pkgs.kustomize
     pkgs.lazygit
