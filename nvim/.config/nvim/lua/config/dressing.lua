@@ -4,10 +4,7 @@ if not present then return end
 
 dressing.setup({
 	input = {
-		winblend = 0
+		winblend = 0,
+		border = "single"
 	}
 })
-
-
-
-
