@@ -52,23 +52,31 @@ end
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
+local present, lspconfig = pcall(require, "lspconfig")
 
-require('lspconfig').gopls.setup({
-	on_attach = on_attach,
-	capabilities = capabilities
-})
+if present then
+	lspconfig.gopls.setup({
+		on_attach = on_attach,
+		capabilities = capabilities
+	})
 
-require('lspconfig').terraformls.setup({
-	on_attach = on_attach
-})
+	lspconfig.terraformls.setup({
+		on_attach = on_attach
+	})
 
---[[ require('lspconfig').yamlls.setup({
-	on_attach = on_attach
-}) ]]
+	--[[ require('lspconfig').yamlls.setup({
+		on_attach = on_attach
+	}) ]]
 
-require('lspconfig').elixirls.setup({
-	cmd = { "elixir-ls" },
-	on_attach = on_attach,
---[[ on_attach = lsp_status.on_attach,
-	capabilities = lsp_status.capabilities ]]
-})
+	lspconfig.elixirls.setup({
+		cmd = { "elixir-ls" },
+		on_attach = on_attach,
+	--[[ on_attach = lsp_status.on_attach,
+		capabilities = lsp_status.capabilities ]]
+	})
+
+	lspconfig.tsserver.setup({
+		on_attach = on_attach,
+		capabilities = capabilities
+	})
+end
