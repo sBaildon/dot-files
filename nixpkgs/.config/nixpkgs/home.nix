@@ -10,6 +10,7 @@
   home.homeDirectory = "/Users/sbaildon";
 
   home.packages = [
+    pkgs.age
     pkgs.bat
     pkgs.bash
     pkgs.coreutils-prefixed
