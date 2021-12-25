@@ -61,7 +61,6 @@
     pkgs.terraform
     pkgs.terraform-ls
     pkgs.tree
-    pkgs.tree-sitter
     pkgs.watch
     pkgs.xh
     pkgs.yq-go
