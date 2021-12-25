@@ -113,7 +113,7 @@ hi NonText ctermfg=8
 hi VertSplit ctermfg=8 ctermbg=none cterm=none
 hi ErrorMsg ctermfg=1 ctermbg=none cterm=none
 hi WarningMsg ctermfg=3 ctermbg=none cterm=none
-hi MsgArea ctermfg=7 ctermbg=none cterm=none
+" hi MsgArea ctermfg=7 ctermbg=none cterm=none
 
 " Treesitter links
 hi Number ctermfg=16 ctermbg=none cterm=none

@@ -46,7 +46,6 @@
     pkgs.pastel
     pkgs.pet
     pkgs.pinentry_mac
-    pkgs.postgresql
     pkgs.python37
     pkgs.rclone
     pkgs.restic
