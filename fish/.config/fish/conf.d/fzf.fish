@@ -1,7 +1,7 @@
 if type --query fd
-	set -x FZF_DEFAULT_COMMAND 'fd --type file --follow --hidden --exclude .git'
+	set -x FZF_DEFAULT_COMMAND 'fd --color=always --type file --follow --hidden --exclude .git'
 	set -x FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
-	set -x FZF_ALT_C_COMMAND 'fd --type directory'
+	set -x FZF_ALT_C_COMMAND 'fd --color=always --type directory'
 end
 
 set -x FZF_DEFAULT_OPTS
@@ -10,3 +10,4 @@ set -x --append FZF_DEFAULT_OPTS --multi
 set -x --append FZF_DEFAULT_OPTS --border=sharp
 set -x --append FZF_DEFAULT_OPTS --preview-window=border-sharp
 set -x --append FZF_DEFAULT_OPTS --info=inline
+set -x --append FZF_DEFAULT_OPTS --ansi
