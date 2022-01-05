@@ -36,6 +36,7 @@
     pkgs.go
     pkgs.htop
     pkgs.imagemagick
+    pkgs.jid
     pkgs.jq
     pkgs.kustomize
     pkgs.lazygit
