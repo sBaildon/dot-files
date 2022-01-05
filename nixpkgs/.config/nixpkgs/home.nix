@@ -60,7 +60,6 @@
     pkgs.stow
     pkgs.terraform
     pkgs.terraform-ls
-    pkgs.tree
     pkgs.watch
     pkgs.xh
     pkgs.yq-go
