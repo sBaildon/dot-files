@@ -189,8 +189,6 @@ autocmd FileType NvimTree setlocal winhighlight=Normal:Panels
 hi Whitespace ctermfg=8 ctermbg=none
 
 hi link TelescopeMatching Search
-nnoremap <silent> <leader>gr <cmd>lua vim.lsp.buf.rename()<CR>
-noremap <silent> <C-u> <cmd>lua vim.lsp.diagnostic.show_line_diagnostics({ show_header = false, border = "single" })<CR>
 
 nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
