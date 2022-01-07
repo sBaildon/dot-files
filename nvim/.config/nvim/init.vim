@@ -177,6 +177,7 @@ hi link NvimTreeGitDeleted GitSignsDelete
 hi link NvimTreeIndentMarker LineNr
 
 hi Panels ctermbg=252 ctermfg=241
+hi Directory ctermfg=237 ctermbg=none
 hi VertSplit ctermfg=250 ctermbg=0
 
 set fillchars+=vert:\▎
