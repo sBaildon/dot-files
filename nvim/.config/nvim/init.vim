@@ -142,9 +142,9 @@ hi Repeat ctermfg=3 ctermbg=none cterm=none
 hi Define ctermfg=none ctermbg=1 cterm=none
 hi Exception ctermfg=1 ctermbg=none cterm=none
 
-hi LspReferenceText ctermfg=6 ctermbg=none cterm=none
-hi LspReferenceRead ctermfg=3 ctermbg=none cterm=none
-hi LspReferenceWrite ctermfg=1 ctermbg=none cterm=none
+hi def link LspReferenceText CursorLine
+hi def link LspReferenceRead CursorLine
+hi def link LspReferenceWrite CursorLine
 
 hi DiagnosticUnderlineError cterm=undercurl
 hi DiagnosticUnderlineWarn cterm=undercurl
