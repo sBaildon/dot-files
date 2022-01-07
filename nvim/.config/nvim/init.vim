@@ -243,6 +243,8 @@ set incsearch hlsearch ignorecase smartcase
 autocmd BufRead * silent! normal! g`"zz
 
 autocmd TermOpen * setlocal nonumber norelativenumber
+tnoremap <Esc> <C-\><C-n>
+
 " quick swap buffers
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
