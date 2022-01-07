@@ -23,6 +23,7 @@ return packer.startup({ function()
 
 	use 'mattn/emmet-vim'
 
+	-- vscode-like pictograms for neovim lsp completion items
 	use 'onsails/lspkind-nvim'
 
 	use {
