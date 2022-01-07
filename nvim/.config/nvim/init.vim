@@ -16,7 +16,6 @@ let g:nvim_tree_icons = {
     \   }
     \ }
 
-
 lua require('plugins')
 
 set nocompatible
@@ -182,7 +181,6 @@ hi VertSplit ctermfg=250 ctermbg=0
 
 set fillchars+=vert:\▎
 autocmd FileType Outline setlocal winhighlight=Normal:Panels
-autocmd FileType NvimTree setlocal winhighlight=Normal:Panels
 autocmd FileType Trouble setlocal winhighlight=Normal:Panels
 " autocmd FileType NvimTree setlocal winhighlight=Normal:Panels
 hi link NvimTreeNormal Panels
