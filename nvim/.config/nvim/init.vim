@@ -147,11 +147,6 @@ hi LspReferenceText ctermfg=6 ctermbg=none cterm=none
 hi LspReferenceRead ctermfg=3 ctermbg=none cterm=none
 hi LspReferenceWrite ctermfg=1 ctermbg=none cterm=none
 
-hi LspDiagnosticsDefaultError ctermfg=1 ctermbg=none cterm=none
-hi LspDiagnosticsDefaultWarning ctermfg=3 ctermbg=none cterm=none
-hi LspDiagnosticsDefaultInformation ctermfg=6 ctermbg=none cterm=none
-hi LspDiagnosticsDefaultHint ctermfg=2 ctermbg=none cterm=none
-
 hi DiagnosticUnderlineError cterm=undercurl
 hi DiagnosticUnderlineWarn cterm=undercurl
 hi DiagnosticUnderlineInfo cterm=undercurl
