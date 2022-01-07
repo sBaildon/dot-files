@@ -1,3 +1,7 @@
+local present, lspconfig = pcall(require, "lspconfig")
+
+if not present then return end
+
 local present, virtualtypes = pcall(require, "virtualtypes")
 
 local on_attach = function(client, bufnr)
@@ -57,31 +61,18 @@ if cmp_present then
 	capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 end
 
-local present, lspconfig = pcall(require, "lspconfig")
+lspconfig.gopls.setup({
+	on_attach = on_attach,
+	capabilities = capabilities
+})
 
-if present then
-	lspconfig.gopls.setup({
-		on_attach = on_attach,
-		capabilities = capabilities
-	})
+lspconfig.terraformls.setup({
+	on_attach = on_attach
+})
 
-	lspconfig.terraformls.setup({
-		on_attach = on_attach
-	})
+lspconfig.elixirls.setup({
+	cmd = { "elixir-ls" },
+	on_attach = on_attach,
+})
 
-	--[[ require('lspconfig').yamlls.setup({
-		on_attach = on_attach
-	}) ]]
-
-	lspconfig.elixirls.setup({
-		cmd = { "elixir-ls" },
-		on_attach = on_attach,
-	--[[ on_attach = lsp_status.on_attach,
-		capabilities = lsp_status.capabilities ]]
-	})
-
-	lspconfig.tsserver.setup({
-		on_attach = on_attach,
-		capabilities = capabilities
-	})
-end
+})
