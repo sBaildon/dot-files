@@ -1,4 +1,8 @@
-return require('packer').startup({ function()
+local present, packer = pcall(require, "packer")
+
+if not present then return end
+
+return packer.startup({ function()
 	use 'wbthomason/packer.nvim'
 
 	use '~/sources/sbaildon/base16_256.nvim'
