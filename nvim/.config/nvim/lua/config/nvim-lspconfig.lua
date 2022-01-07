@@ -20,11 +20,12 @@ local on_attach = function(client, bufnr)
 	vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
 		vim.lsp.diagnostic.on_publish_diagnostics, {
 			underline = true,
-			virtual_text = true
+			virtual_text = false
 		}
 	)
 
 	buf_set_keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
+	buf_set_keymap('n', ']k', '<cmd>lua vim.diagnostic.open_float({header = false, border = "single"})<CR>', opts)
 	buf_set_keymap('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
 	buf_set_keymap('n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_prev( { popup_opts = { show_header = false, border = "single" } })<CR>', opts)
 	buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next( { popup_opts = { show_header = false, border = "single" } })<CR>', opts)
