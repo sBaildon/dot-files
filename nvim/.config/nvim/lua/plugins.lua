@@ -95,8 +95,6 @@ return packer.startup({ function()
 		config = [[require('config.nvim-tree')]]
 	}
 
-	-- use 'gelguy/wilder.nvim'
-
 	-- Jump into the repositories (git, mercurial…) of your filesystem with telescope.nvim
 	use {
 		'cljoly/telescope-repo.nvim',
