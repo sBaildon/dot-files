@@ -175,16 +175,16 @@ hi link NvimTreeGitDirty GitSignsChange
 hi link NvimTreeGitNew GitSignsAdd
 hi link NvimTreeGitDeleted GitSignsDelete
 hi link NvimTreeIndentMarker LineNr
-autocmd FileType Outline setlocal winhighlight=Normal:Pmenu
-autocmd FileType Trouble setlocal winhighlight=Normal:Pmenu
 
 hi Panels ctermbg=252 ctermfg=241
 hi VertSplit ctermfg=250 ctermbg=0
 
 set fillchars+=vert:\▎
 autocmd FileType Outline setlocal winhighlight=Normal:Panels
-au FileType Trouble setlocal winhighlight=Normal:Panels
 autocmd FileType NvimTree setlocal winhighlight=Normal:Panels
+autocmd FileType Trouble setlocal winhighlight=Normal:Panels
+" autocmd FileType NvimTree setlocal winhighlight=Normal:Panels
+hi link NvimTreeNormal Panels
 
 hi Whitespace ctermfg=8 ctermbg=none
 
