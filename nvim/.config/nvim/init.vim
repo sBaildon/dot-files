@@ -152,10 +152,10 @@ hi LspDiagnosticsDefaultWarning ctermfg=3 ctermbg=none cterm=none
 hi LspDiagnosticsDefaultInformation ctermfg=6 ctermbg=none cterm=none
 hi LspDiagnosticsDefaultHint ctermfg=2 ctermbg=none cterm=none
 
-hi LspDiagnosticsUnderlineError cterm=undercurl
-hi LspDiagnosticsUnderlineWarning cterm=undercurl
-hi LspDiagnosticsUnderlineInformation cterm=undercurl
-hi LspDiagnosticsUnderlineHint cterm=undercurl
+hi DiagnosticUnderlineError cterm=undercurl
+hi DiagnosticUnderlineWarn cterm=undercurl
+hi DiagnosticUnderlineInfo cterm=undercurl
+hi DiagnosticUnderlineHint cterm=undercurl
 
 hi Pmenu ctermfg=7 ctermbg=18 cterm=none
 hi PmenuSel ctermfg=0 ctermbg=3 cterm=none
