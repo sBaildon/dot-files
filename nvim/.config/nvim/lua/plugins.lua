@@ -32,6 +32,7 @@ return packer.startup({ function(use)
 			"hrsh7th/cmp-nvim-lsp",
 			"hrsh7th/cmp-buffer",
 			"hrsh7th/cmp-path",
+			"ray-x/cmp-treesitter",
 			"ray-x/lsp_signature.nvim"
 		},
 		config = [[require('config.nvim-cmp')]]
