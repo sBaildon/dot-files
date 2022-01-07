@@ -1,3 +1,7 @@
+local present, lualine = pcall(require, "lualine")
+
+if not present then return end
+
 local present, gps = pcall(require, "nvim-gps")
 local _, lsp_status = pcall(require, "lsp-status")
 
@@ -34,7 +38,7 @@ local lualine_b = {
 	{ 'diff', color_added = "#008080", color_modified = "#800080", color_removed = "#800000" }
 }
 
-require('lualine').setup({
+lualine.setup({
 	options = {
 		icons_enabled = true,
 		lower = true,
