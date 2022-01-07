@@ -128,11 +128,7 @@ return require('packer').startup({ function()
 	use {
 		"folke/trouble.nvim",
 		requires = {{"kyazdani42/nvim-web-devicons"}},
-		config = function()
-			require("trouble").setup {
-				use_lsp_diagnostic_signs = false
-			}
-		end
+		config = [[require('config.trouble')]]
 	}
 
 	use 'jubnzv/virtual-types.nvim'
