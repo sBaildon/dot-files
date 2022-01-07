@@ -3,6 +3,7 @@ local present, lspconfig = pcall(require, "lspconfig")
 if not present then return end
 
 local virtualtypes_present, virtualtypes = pcall(require, "virtualtypes")
+local lsp_signature_present, lsp_signature = pcall(require, "lsp_signature")
 local illuminate_present, illuminate = pcall(require, "illuminate")
 
 local on_attach = function(client, bufnr)
@@ -51,6 +52,17 @@ local on_attach = function(client, bufnr)
 
 	if virtualtypes_present then
 		virtualtypes.on_attach(client, bufnr)
+	end
+
+	if lsp_signature_present then
+		lsp_signature.on_attach({
+			bind = true,
+			handler_opts = {
+				border = "single"
+			},
+			hint_enable = false,
+			hi_parameter = "CursorLine"
+		})
 	end
 
 	if illuminate_present then
