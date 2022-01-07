@@ -69,8 +69,9 @@ end
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 
 local cmp_present = pcall(require, "cmp")
-if cmp_present then
-	capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+local cmp_nvim_lsp_present, cmp_nvim_lsp = pcall(require, "cmp_nvim_lsp")
+if cmp_present and cmp_nvim_lsp_present then
+	capabilities = cmp_nvim_lsp.update_capabilities(capabilities)
 end
 
 lspconfig.gopls.setup({
