@@ -242,6 +242,7 @@ set incsearch hlsearch ignorecase smartcase
 " to place cursor center of screen
 autocmd BufRead * silent! normal! g`"zz
 
+autocmd TermOpen * setlocal nonumber norelativenumber
 " quick swap buffers
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
