@@ -50,6 +50,9 @@ return packer.startup({ function()
 
 	use 'ggandor/lightspeed.nvim'
 
+	-- automatically highlighting other uses of the word under the cursor.
+	use 'RRethy/vim-illuminate'
+
 	use {
 		'~/sources/sbaildon/lualine.nvim',
 		requires = {
