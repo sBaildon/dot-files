@@ -28,6 +28,13 @@ local opts = {
 		{ name = "nvim_lsp" },
 		{ name = "buffer "},
 		{ name = "path" },
+		{ name = 'vsnip' },
+	},
+	snippet = {
+		-- REQUIRED - you must specify a snippet engine
+		expand = function(args)
+			vim.fn["vsnip#anonymous"](args.body)
+		end,
 	}
 }
 
