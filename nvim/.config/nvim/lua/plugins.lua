@@ -78,8 +78,6 @@ return packer.startup({ function()
 		config = [[require('config.telescope')]]
 	}
 
-	use 'nvim-telescope/telescope-symbols.nvim'
-
 	use {
 		'neovim/nvim-lspconfig',
 		config = [[require('config.nvim-lspconfig')]]
