@@ -3,6 +3,7 @@ local present, lspconfig = pcall(require, "lspconfig")
 if not present then return end
 
 local present, virtualtypes = pcall(require, "virtualtypes")
+local illuminate_present, illuminate = pcall(require, "illuminate")
 
 local on_attach = function(client, bufnr)
 	local function buf_set_keymap(...)
@@ -52,6 +53,9 @@ local on_attach = function(client, bufnr)
 		virtualtypes.on_attach(client, bufnr)
 	end
 
+	if illuminate_present then
+		illuminate.on_attach(client)
+	end
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
