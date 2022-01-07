@@ -2,7 +2,7 @@ local present, lspconfig = pcall(require, "lspconfig")
 
 if not present then return end
 
-local present, virtualtypes = pcall(require, "virtualtypes")
+local virtualtypes_present, virtualtypes = pcall(require, "virtualtypes")
 local illuminate_present, illuminate = pcall(require, "illuminate")
 
 local on_attach = function(client, bufnr)
@@ -49,7 +49,7 @@ local on_attach = function(client, bufnr)
 		vim.api.nvim_command[[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()]]
 	end
 
-	if present then
+	if virtualtypes_present then
 		virtualtypes.on_attach(client, bufnr)
 	end
 
