@@ -10,6 +10,11 @@ return require('packer').startup({ function()
 		config = [[require('config.dressing')]]
 	}
 
+	use {
+		"petertriho/nvim-scrollbar",
+		config = [[require('config.nvim-scrollbar')]]
+	}
+
 	use 'b3nj5m1n/kommentary'
 
 	use 'mattn/emmet-vim'
