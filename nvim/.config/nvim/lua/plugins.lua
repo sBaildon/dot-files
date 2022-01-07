@@ -2,7 +2,7 @@ local present, packer = pcall(require, "packer")
 
 if not present then return end
 
-return packer.startup({ function()
+return packer.startup({ function(use)
 	use 'wbthomason/packer.nvim'
 
 	use '~/sources/sbaildon/base16_256.nvim'
