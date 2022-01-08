@@ -80,12 +80,28 @@ lspconfig.gopls.setup({
 })
 
 lspconfig.terraformls.setup({
-	on_attach = on_attach
+	on_attach = on_attach,
+	capabilities = capabilities
+})
+
+lspconfig.yamlls.setup({
+	on_attach = on_attach,
+	capabilities = capabilities
 })
 
 lspconfig.elixirls.setup({
 	cmd = { "elixir-ls" },
 	on_attach = on_attach,
+	capabilities = capabilities
 })
 
+lspconfig.html.setup({
+	on_attach = on_attach,
+	capabilities = capabilities
 })
+
+lspconfig.tsserver.setup({
+	on_attach = on_attach,
+	capabilities = capabilities
+})
+
