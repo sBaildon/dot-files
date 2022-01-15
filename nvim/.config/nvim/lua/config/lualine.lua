@@ -41,7 +41,7 @@ local lualine_b = {
 lualine.setup({
 	options = {
 		icons_enabled = true,
-		lower = true,
+		fmt = string.lower,
 		section_separators = {'', ''},
 		component_separators = {'', ''},
 		theme = "base16_256",

@@ -52,7 +52,7 @@ return packer.startup({ function(use)
 	use 'RRethy/vim-illuminate'
 
 	use {
-		'~/sources/sbaildon/lualine.nvim',
+		'nvim-lualine/lualine.nvim',
 		requires = {
 			'nvim-lua/lsp-status.nvim'
 		},
