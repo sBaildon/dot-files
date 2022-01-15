@@ -118,7 +118,10 @@ return packer.startup({ function(use)
 	}
 
 	-- A tree like view for symbols in Neovim using the Language Server Protocol.
-	use 'simrat39/symbols-outline.nvim'
+	use {
+		'simrat39/symbols-outline.nvim',
+		disable = true -- errors complaining about window buf number
+	}
 
 	use {
 		"SmiteshP/nvim-gps",
