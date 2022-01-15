@@ -46,7 +46,6 @@ lualine.setup({
 		}
 	},
 	sections = {
-		lualine_a = lualine_a,
 		lualine_b = lualine_b,
 		lualine_c = lualine_c,
 		lualine_z = {
