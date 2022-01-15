@@ -48,16 +48,15 @@ lualine.setup({
 	sections = {
 		lualine_b = lualine_b,
 		lualine_c = lualine_c,
-		lualine_z = {
-			"progress",
-			"location"
-
-		},
 		lualine_x = {
 			indentation,
 			"encoding",
 			"fileformat",
 			"filetype"
+		},
+		lualine_z = {
+			"location"
+
 		}
 	}
 })
