@@ -29,7 +29,6 @@ return packer.startup({ function(use)
 			"hrsh7th/cmp-path",
 			"L3MON4D3/LuaSnip",
 			"saadparwaiz1/cmp_luasnip",
-			"ray-x/cmp-treesitter",
 			"ray-x/lsp_signature.nvim"
 		},
 		config = [[require('config.nvim-cmp')]]

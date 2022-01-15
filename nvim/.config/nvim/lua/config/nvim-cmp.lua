@@ -29,7 +29,6 @@ local opts = {
 		{ name = "buffer "},
 		{ name = "path" },
 		{ name = 'luasnip' },
-		{ name = 'treesitter' }
 	},
 	snippet = {
 		-- REQUIRED - you must specify a snippet engine
