@@ -2,28 +2,25 @@ local present, lualine = pcall(require, "lualine")
 
 if not present then return end
 
-local present, gps = pcall(require, "nvim-gps")
-local _, lsp_status = pcall(require, "lsp-status")
+local gps_present, gps = pcall(require, "nvim-gps")
+local lsp_present, lsp_status = pcall(require, "lsp-status")
 
 
-lsp_status.config({
-	indicator_ok = '',
-	status_symbol = '',
-})
+local lualine_c = {}
 
-local lualine_c
-if present then
-	lualine_c =  {
-		{ lsp_status.status },
-		"filename",
-		{ gps.get_location, condition = gps.is_available, lower = false },
+if lsp_present then
+	lsp_status.config({
+		indicator_ok = '',
+		status_symbol = '',
+	})
 
-	}
-else
-	lualine_c =  {
-		{ lsp_status.status },
-		"filename"
-	}
+	table.insert(lualine_c, { lsp_status.status})
+end
+
+table.insert(lualine_c, "filename")
+
+if gps_present then
+	table.insert(lualine_c, { gps.get_location, condition = gps.is_available, lower = false })
 end
 
 local function indentation()
