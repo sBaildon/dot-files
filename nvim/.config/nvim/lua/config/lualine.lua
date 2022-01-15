@@ -31,8 +31,7 @@ local function indentation()
 end
 
 local lualine_b = {
-	"branch",
-	{ 'diff', color_added = "#008080", color_modified = "#800080", color_removed = "#800000" }
+	"branch"
 }
 
 lualine.setup({
