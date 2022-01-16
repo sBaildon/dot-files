@@ -47,7 +47,6 @@
     pkgs.pastel
     pkgs.pet
     pkgs.pinentry_mac
-    pkgs.python37
     pkgs.rclone
     pkgs.restic
     pkgs.ripgrep
