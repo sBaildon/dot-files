@@ -46,7 +46,6 @@
     pkgs.nodejs-16_x
     pkgs.pastel
     pkgs.pet
-    pkgs.pinentry_mac
     pkgs.rclone
     pkgs.restic
     pkgs.ripgrep
