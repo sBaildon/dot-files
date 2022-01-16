@@ -64,6 +64,7 @@
     pkgs.watch
     pkgs.xh
     pkgs.yq-go
+    pkgs.yubikey-agent
   ];
 
   # This value determines the Home Manager release that your
