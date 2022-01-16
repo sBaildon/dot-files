@@ -23,7 +23,7 @@
 	<string>Interactive</string>
 
 	<key>StandardOutPath</key>
-	<string>/tmp//log/skhd/stdout.log</string>
+	<string>/tmp/log/skhd/stdout.log</string>
 
 	<key>StandardErrorPath</key>
 	<string>/tmp/log/skhd/stderr.log</string>
