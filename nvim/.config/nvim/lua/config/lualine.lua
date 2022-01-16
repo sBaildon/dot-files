@@ -30,6 +30,11 @@ local function indentation()
 	return indent_style .. ": " .. indent_size
 end
 
+local lualine_a = {
+	{ 'mode', fmt = string.lower }
+}
+
+
 local lualine_b = {
 	"branch"
 }
@@ -37,7 +42,6 @@ local lualine_b = {
 lualine.setup({
 	options = {
 		icons_enabled = true,
-		fmt = string.lower,
 		section_separators = {'', ''},
 		component_separators = {'', ''},
 		theme = "base16_256",
@@ -46,6 +50,7 @@ lualine.setup({
 		}
 	},
 	sections = {
+		lualine_a = lualine_a,
 		lualine_b = lualine_b,
 		lualine_c = lualine_c,
 		lualine_x = {
