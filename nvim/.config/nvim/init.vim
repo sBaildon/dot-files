@@ -169,11 +169,6 @@ hi IndentBlanklineSpaceCharBlankline ctermfg=18
 hi IndentBlanklineChar ctermfg=18
 hi link IndentBlanklineContextChar IncSearch
 
-" set colorcolumn to clear trailing cursorlines when navigating
-" indent-blankline uses some newer features like "hl_mode=combine"
-" that neovim doesn't render properly
-set colorcolumn=99999 " https://github.com/lukas-reineke/indent-blankline.nvim/issues/59
-
 hi link NvimTreeGitDirty GitSignsChange
 hi link NvimTreeGitNew GitSignsAdd
 hi link NvimTreeGitDeleted GitSignsDelete
